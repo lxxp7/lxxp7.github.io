@@ -33,7 +33,7 @@
             <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
                 Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
                 Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que
-                la communication, la gestion de projet, le développement d'applications.
+                la communication, la gestion de projet, le développement d'applications...
             </p>
             <p>
                 En dehors de mon parcours académique, je cultive une passion pour le numérique, notemment grâce aux jeux vidéos, ainsi qu'à la musique.
