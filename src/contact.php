@@ -20,7 +20,8 @@
         </div>
 
     </nav>
-
+</header>
+<main>
     <div class="background">
     <div class="container">
         <div class="screen">
@@ -59,20 +60,8 @@
         </div>
     </div>
 </div>
-</header>
-<footer>
-    <div class="name">Liam Schott</div>
-    <div class="icon">
+</main>
 
-        <a href="https://www.linkedin.com/in/liam-schott-741b2b263/" target="_blank" class="sm-icon">
-            <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="https://github.com/lxxp7/" target="_blank" class="sm-icon">
-            <ion-icon name="logo-github"></ion-icon>
-        </a>
-
-    </div>
-</footer>
 </body>
 </html>
 

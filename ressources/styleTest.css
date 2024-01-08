@@ -59,7 +59,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
+    background-color: black;
 }
 
 
@@ -70,6 +70,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2.5rem 1rem;
+
 }
 
 /* Styles pour le titre de niveau 1 avec effet au survol */

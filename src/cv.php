@@ -21,14 +21,16 @@
         </div>
     </nav>
 
+
+
+</header>
+<main>
     <div class="header-container">
         <div class="hdr-container-left">
-            <h1>Mon CV</h1>
             <img src="../ressources/images/cv.png" alt="image du CV" id="imageCV"/>
         </div>
     </div>
-
-</header>
+</main>
 <footer>
     <div class="name">Liam Schott</div>
     <div class="icon">
