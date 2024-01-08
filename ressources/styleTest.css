@@ -31,7 +31,7 @@ body {
 /* Style pour les liens sociaux avec effet au survol */
 .social-links {
     text-decoration: none;
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
     margin: 0;
     color: #4b5563;
     font-weight: 500;
@@ -173,4 +173,76 @@ footer {
     max-width: 50%;
     height: auto;
 }
+
+/* Ajoutez les règles de médias query pour les téléphones */
+@media screen and (max-width: 767px) {
+    /* Styles pour le conteneur de l'en-tête */
+    .header-container {
+        flex-direction: column;
+        column-gap: 0;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    /* Styles pour le conteneur gauche de l'en-tête */
+    .hdr-container-left {
+        text-align: center;
+    }
+
+    /* Styles pour les éléments enfants à l'intérieur du conteneur gauche de l'en-tête */
+    .hdr-container-left > * {
+        max-width: 100%;
+    }
+
+    /* Styles pour le titre de niveau 1 avec effet au survol */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Styles pour le titre de niveau 3 */
+    h3 {
+        margin: 0.25rem 0 1.5rem 0;
+    }
+
+    /* Styles pour les paragraphes */
+    header p {
+        font-size: 16px;
+        margin: 1rem;
+        display: none; /* Masquer les paragraphes */
+    }
+
+    /* Styles pour le pied de page */
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* Styles pour l'image */
+    #imageCV {
+        max-width: 100%;
+    }
+
+    /* Styles pour l'en-tête en mode responsive */
+    .acc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: black url('./images/DO5-2.gif') no-repeat fixed center center;
+    }
+
+    /* Styles pour la navigation en mode responsive */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Styles pour les liens de la navigation en mode responsive */
+    nav a {
+        padding: 1rem 0;
+        display: block;
+    }
+}
+
 
