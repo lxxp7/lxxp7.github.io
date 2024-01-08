@@ -18,9 +18,9 @@
             <a href="./cv.php" class="social-links">CV</a>
             <a href="./contact.php" class="social-links">Contact</a>
         </div>
-
     </nav>
 </header>
+
 <main>
     <div class="header-container">
         <div class="hdr-container-left">
@@ -49,17 +49,16 @@
         </div>
     </div>
 </main>
+
 <footer>
     <div class="name">Liam Schott</div>
     <div class="icon">
-
         <a href="https://www.linkedin.com/in/liam-schott-741b2b263/" target="_blank" class="sm-icon">
             <ion-icon name="logo-linkedin"></ion-icon>
         </a>
         <a href="https://github.com/lxxp7/" target="_blank" class="sm-icon">
             <ion-icon name="logo-github"></ion-icon>
         </a>
-
     </div>
 </footer>
 </body>

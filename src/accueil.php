@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../ressources/styleTest.css">
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -18,7 +17,6 @@
             <a href="./cv.php" class="social-links">CV</a>
             <a href="./contact.php" class="social-links">Contact</a>
         </div>
-
     </nav>
     <p class="left">Liam Schott </p>
     <p class="left">Etudiant à l'IUT</p>
@@ -28,7 +26,6 @@
 <main>
     <div class="header-container">
         <div class="hdr-container-left">
-
             <h2>Présentation</h2>
             <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
                 Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
@@ -38,7 +35,6 @@
             <p>
                 En dehors de mon parcours académique, je cultive une passion pour le numérique, notemment grâce aux jeux vidéos, ainsi qu'à la musique.
             </p>
-
             <h2>Expériences professionelles</h2>
             <p>
                 Lors de mon stage de 3<sup>e</sup>,  j’ai eu le privilège d’effectuer une immersion au cœur d’une entreprise montpelliéraine d'animation 3D, du nom de Dwarf Animation Studio
@@ -50,16 +46,15 @@
                 Cette expérience professionnelle à l'international serait non seulement enrichissante sur le plan professionnel, mais elle me permettrait également de
                 développer mes compétences dans un contexte international. Parallèlement, je recherche des opportunités de stage en France, au cas où l'option canadienne
                 ne se concrétiserait pas.
-
             </p>
             <h2>Orientation Future</h2>
             <p>
                 En ce qui concerne ma poursuite d'études, je suis actuellement en réflexion sur les options qui s'offrent à moi. L'idée de continuer vers un Master dans le domaine de l'informatique m'intéresse, avec un accent particulier sur des spécialités telles que le développement web avancé ou autre.
             </p>
-
         </div>
     </div>
 </main>
+
 <footer>
     <div class="name">Liam Schott</div>
     <div class="icon">
@@ -70,7 +65,6 @@
         <a href="https://github.com/lxxp7/" target="_blank" class="sm-icon">
             <ion-icon name="logo-github"></ion-icon>
         </a>
-
     </div>
 </footer>
 </body>
