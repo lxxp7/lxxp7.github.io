@@ -26,14 +26,13 @@ button, input {
     bottom: 0;
     background: url('./images/bcContact3-transformed.png') no-repeat fixed center center;
     background-size: cover; /* ou contain, selon vos préférences */
-    filter: blur(5px); /* Ajustez la valeur de flou selon vos préférences */
+    filter: blur(8px); /* Ajustez la valeur de flou selon vos préférences */
     z-index: -1;
 }
 
 .container {
     flex: 0 1 700px;
     margin: auto;
-    padding: 10px;
     position: relative;
     z-index: 1;
 }
@@ -60,7 +59,7 @@ button, input {
 .screen-header {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background: #4d4d4f;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -79,17 +78,7 @@ button, input {
     background: white;
 }
 
-.screen-header-button.close {
-    background: #b39ec7;
-}
 
-.screen-header-button.maximize {
-    background: #e8e925;
-}
-
-.screen-header-button.minimize {
-    background: #74c54f;
-}
 
 .screen-header-right {
     display: flex;
@@ -109,7 +98,7 @@ button, input {
 
 .screen-body-item {
     flex: 1;
-    padding: 40px;
+    padding: 100px;
 }
 
 .screen-body-item.left {

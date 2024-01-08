@@ -36,7 +36,7 @@
             <div class="screen-body">
                 <div class="screen-body-item left">
                     <div class="app-title">
-                        <span>CONTACTEZ -</span>
+                        <span>CONTACTEZ </span>
                         <span>MOI</span>
                     </div>
                 </div>
