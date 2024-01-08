@@ -20,13 +20,14 @@
         </div>
 
     </nav>
+
     <div class="header-container">
         <div class="hdr-container-left">
             <h1>Liam Schott</h1>
             <h3>Etudiant à l'IUT</h3>
-            <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique.
-                Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science et l'informatique (NSI).
-                Cette expérience académique me donne les bases pour continuer à progresser dans les domaines comme:
+            <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
+                Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
+                Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que
                 la communication, la gestion de projet, le développement d'applications.
             </p>
             <p>
@@ -40,9 +41,11 @@
                 Cette expérience a été décisive dans le choix de mon parcours.
             </p>
             <p>
-                J'ai l'occasion d'aller effectuer un stage au Canada dans une entreprise du nom de Mirkos Animation, où travaille mon oncle
-                qui est un ancien élève de l'IUT, et qui me ferait vivre une expérience professionnelle enrichissante et me permettrait de développer mes compétences.
-                J'essaye tout de même de chercher une entreprise en France, dans le cas où partir au Canada ne serait pas possible.
+                J'ai l'opportunité d'effectuer un stage au Canada chez Mirkos Animation, une entreprise où travaille mon oncle, lui-même ancien élève de l'IUT.
+                Cette expérience professionnelle à l'international serait non seulement enrichissante sur le plan professionnel, mais elle me permettrait également de
+                développer mes compétences dans un contexte international. Parallèlement, je recherche des opportunités de stage en France, au cas où l'option canadienne
+                ne se concrétiserait pas.
+
             </p>
         </div>
     </div>

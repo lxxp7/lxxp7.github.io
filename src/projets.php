@@ -23,7 +23,8 @@
     <div class="header-container">
         <div class="hdr-container-left">
             <h1>Projets réalisés</h1>
-            <h3>Site Internet</h3>
+
+            <h2>Site de gestion des stages</h2>
             <p>
                 Ce projet consiste en la réalisation d'un site web qui doit correspondre aux besoins spécifiques d'un client, ici le client est un enseignant. Nous sommes cinq étudiants à travailler
                 sur ce projet. Mon principal rôle est celui de développeur mais j'ai également été pendant une partie du projet le ScrumMaster de l'équipe, rôle qui consiste à veiller
@@ -36,10 +37,13 @@
                     https://webinfo.iutmontp.univ-montp2.fr/~capom/saeweb/web/controleurFrontal
                 </a>
             </p>
-
-            <h2>JSP</h2>
+            <h2>Les Aventuriers du rail</h2>
             <p>
-                JSP
+                Ce projet, réalisé en première année de BUT consistait à développer un jeu de société appelé "Les aventuriers du Rail" en Java/JavaFX.
+                En binôme, nous avons du développer ce jeu en deux parties :
+                la première partie consistait à coder la mécanique du jeu en Java et vérifier qu'elles marchaient grâce à des
+                test unitaires, et dans la deuxième partie nous avons du créer l'IHM du jeu en JavaFX en respectant les règles du jeu,
+                soit bloquer les actions impossibles, avoir un log des actions effectuées, pouvoir choisir le nombre de joueurs au début de la partie, piocher des cartes...
 
             </p>
         </div>
