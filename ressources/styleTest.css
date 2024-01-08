@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent-link, .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    text-decoration: none;
+    padding: 0 2.5rem;
+    margin: 0;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.social-links:hover {
+    opacity: 0.8;
+    color: #2b36f4;
+}
+
+header {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 1rem;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+h1:hover {
+    color: #262fdc;
+}
+
+h3 {
+    margin: 0.25rem 0 2.25rem 0;
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 1.75rem 0;
+}
+
+.header-container {
+    display: flex;
+    column-gap: 7.5rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding: 0 5rem;
+}
+
+.hdr-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre l'image verticalement */
+    text-align: left; /* Garde le texte aligné à gauche */
+}
+
+.hdr-container-left > * {
+    width: 100%; /* Assure que le contenu occupe toute la largeur disponible */
+    max-width: 90%; /* Ajoute une largeur maximale au contenu si nécessaire */
+}
+
+.sm-icon {
+    padding: 0 0.5rem;
+    margin: 0;
+    font-size: 35px;
+    color: rgb(35, 35, 35);
+}
+
+.sm-icon:hover {
+    opacity: 0.8;
+    color: #2b36f4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+}
+
+#imageCV {
+    max-width: 50%;
+    height: auto;
+}

@@ -2,57 +2,62 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Présentation</title>
-    <link href="../ressources/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../ressources/styleTest.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 <header>
-    <div>
-        <div id="burger">
-            <a href="" class="submenu">Pages:</a>
-
-            <div id="b_submenu">
-                <a href="./accueil.php"
-                   class="b_subpages">Presentation</a>
-                <a href="./cv.php"
-                   class="b_subpages">CV</a>
-                <a href="./projets.php"
-                   class="b_subpages">Réalisation</a>
-            </div>
+    <nav class="container">
+        <div class="parent-link">
+            <a href="./accueil.php" class="social-links">Présentation</a>
+            <a href="./projets.php" class="social-links">Projets</a>
+            <a href="./cv.php" class="social-links">CV</a>
         </div>
-        <h1>Liam Schott</h1>
+
+    </nav>
+    <div class="header-container">
+        <div class="hdr-container-left">
+            <h1>Liam Schott</h1>
+            <h3>Etudiant à l'IUT</h3>
+            <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique.
+                Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science et l'informatique (NSI).
+                Cette expérience académique me donne les bases pour continuer à progresser dans les domaines comme:
+                la communication, la gestion de projet, le développement d'applications.
+            </p>
+            <p>
+                En dehors de mon parcours académique, je cultive une passion pour le numérique, notemment grâce aux jeux vidéos, ainsi qu'à la musique.
+            </p>
+
+            <h2>Expériences professionelles</h2>
+            <p>
+                Lors de mon stage de 3<sup>e</sup>,  j’ai eu le privilège d’effectuer une immersion au cœur d’une entreprise montpelliéraine d'animation 3D, du nom de Dwarf Animation Studio
+                . Cette expérience m'a énormément plus car j'ai pu voir les coulisses de la réalisation d'un dessin animé en 3D qui était un domaine qui m'intéresait énormément.
+                Cette expérience a été décisive dans le choix de mon parcours.
+            </p>
+            <p>
+                J'ai l'occasion d'aller effectuer un stage au Canada dans une entreprise du nom de Mirkos Animation, où travaille mon oncle
+                qui est un ancien élève de l'IUT, et qui me ferait vivre une expérience professionnelle enrichissante et me permettrait de développer mes compétences.
+                J'essaye tout de même de chercher une entreprise en France, dans le cas où partir au Canada ne serait pas possible.
+            </p>
+        </div>
     </div>
-    <p><b>Présentation</b></p>
 </header>
-<div class="container">
-    <h2>Bienvenue</h2>
-    <p>
-        Je suis passionné par l'informatique depuis le primaire. Je me lançais des défis préférais les jeux d’énigmes à d’autres,
-        et je continue à ce jour à me régaler dans la réalisation de  projets et la résolution de  problèmes.
-        Cette opportunité d’être à l'IUT de Montpellier me permet de travailler avec passion.
-    </p>
-    <p>
-        De plus, j’étais au lycée en sport étude en natation et j’ai réussit à participer à un championnat de France. Nager, Voyager, lire et
-        même dessiner  occupe le peu de temps qui me reste reste, sans oublier les jeux de sociétés en famille.
-    </p>
-    <p>
-        En deuxième année de BUT en informatique je bénéficie d’une excellente formation. Cette expérience académique
-        et me donne les bases pour continuer à progresser dans les domaines comme: la communication, la gestion de projet, le développement d'applications.
-    </p>
+<footer>
+    <div class="name">Liam Schott</div>
+    <div class="icon">
 
-    <h2>Expérience</h2>
-    <p>
-        A l’ occasion du stage scolaire de 3<sup>e</sup> lors de mes 14 ans,  j’ai eu le privilège d’effectuer une immersion au cœur d’un service informatique DSI Pôle Emploi,
-        et j’ai côtoyé des développeurs dans leur environnement. Cette expérience a été décisive dans le choix de mon parcours d’étudiant.
-    </p>
-    <p>
-        Je recherche activement l’entreprise de programmation ou je pourrais effectuer mon contrat d’alternance prévu dans mon cursus.
-    </p>
-    <p>
-        J’ai aussi une petite expérience professionnelle en job d’été à Carrefour, cela m’a mis dans le bain de la vie salariale, employé au drive.
-    </p>
+        <a href="https://www.linkedin.com/in/liam-schott-741b2b263/" target="_blank" class="sm-icon">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/lxxp7/" target="_blank" class="sm-icon">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
 
-</div>
-
+    </div>
+</footer>
 </body>
 </html>
