@@ -17,6 +17,7 @@
             <a href="./accueil.php" class="social-links">Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
+            <a href="./contact.php" class="social-links">Contact</a>
         </div>
     </nav>
 
