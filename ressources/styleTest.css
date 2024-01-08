@@ -110,9 +110,9 @@ header p {
 }
 
 .right {
-    font-family: '11.20', serif;
+    font-family: 'yagiza', serif;
     color: #b39ec7;
-    font-size: 6em;
+    font-size: 4em;
     align-self: flex-end; /* Aligner à droite */
 }
 
@@ -123,6 +123,11 @@ header p:hover{
 @font-face {
     font-family: "11.20";
     src: url("./font/11.20___.TTF") format('truetype'); ;
+}
+
+@font-face {
+    font-family: "yagiza";
+    src: url("./font/YAGIZA__.woff") format('woff'); ;
 }
 
 /* Styles pour le conteneur de l'en-tête */
