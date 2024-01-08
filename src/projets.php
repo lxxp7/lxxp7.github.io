@@ -20,6 +20,8 @@
         </div>
 
     </nav>
+</header>
+<main>
     <div class="header-container">
         <div class="hdr-container-left">
             <h1>Projets réalisés</h1>
@@ -32,10 +34,8 @@
             </p>
             <p>
                 Ce site internet a été fait grâce à du PHP, HTML, CSS, JavaScript et SQL.
-                Voici un lien vers le site :
-                <a href="https://webinfo.iutmontp.univ-montp2.fr/~schottl/saeweb/web/controleurFrontal.php">
-                    https://webinfo.iutmontp.univ-montp2.fr/~capom/saeweb/web/controleurFrontal
-                </a>
+                Voici un
+                <a href="https://webinfo.iutmontp.univ-montp2.fr/~schottl/saeweb/web/controleurFrontal.php">lien vers le site</a>
             </p>
             <h2>Les Aventuriers du rail</h2>
             <p>
@@ -48,7 +48,7 @@
             </p>
         </div>
     </div>
-</header>
+</main>
 <footer>
     <div class="name">Liam Schott</div>
     <div class="icon">

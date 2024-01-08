@@ -10,7 +10,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<header>
+<header class="acc">
     <nav class="container">
         <div class="parent-link">
             <a href="./accueil.php" class="social-links">Présentation</a>
@@ -20,11 +20,16 @@
         </div>
 
     </nav>
+    <p class="left">Liam Schott </p>
+    <p class="left">Etudiant à l'IUT</p>
+    <p class="right">-PortFolio</p>
+</header>
 
+<main>
     <div class="header-container">
         <div class="hdr-container-left">
-            <h1>Liam Schott</h1>
-            <h3>Etudiant à l'IUT</h3>
+
+
             <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
                 Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
                 Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que
@@ -49,7 +54,7 @@
             </p>
         </div>
     </div>
-</header>
+</main>
 <footer>
     <div class="name">Liam Schott</div>
     <div class="icon">
