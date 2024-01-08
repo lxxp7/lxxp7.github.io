@@ -29,7 +29,7 @@
     <div class="header-container">
         <div class="hdr-container-left">
 
-
+            <h2>Présentation</h2>
             <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
                 Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
                 Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que
@@ -52,6 +52,11 @@
                 ne se concrétiserait pas.
 
             </p>
+            <h2>Orientation Future</h2>
+            <p>
+                En ce qui concerne ma poursuite d'études, je suis actuellement en réflexion sur les options qui s'offrent à moi. L'idée de continuer vers un Master dans le domaine de l'informatique m'intéresse, avec un accent particulier sur des spécialités telles que le développement web avancé ou autre.
+            </p>
+
         </div>
     </div>
 </main>
