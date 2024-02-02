@@ -104,7 +104,7 @@ header p {
 }
 
 .left {
-    font-family: '11.20', serif;
+    font-family: 'outage', serif;
     color: rgba(213, 213, 224, 0.4);
     font-size: 6.5em;
     align-self: flex-start; /* Aligner à gauche */
@@ -129,6 +129,11 @@ header p:hover{
 @font-face {
     font-family: "yagiza";
     src: url("./font/YAGIZA__.woff") format('woff'); ;
+}
+
+@font-face {
+    font-family: "outage";
+    src: url("./font/Outage.ttf") format('truetype'); ;
 }
 
 /* Styles pour le conteneur de l'en-tête */

@@ -46,6 +46,13 @@
                 soit bloquer les actions impossibles, avoir un log des actions effectuées, pouvoir choisir le nombre de joueurs au début de la partie, piocher des cartes...
 
             </p>
+            <h2>Mastermind</h2>
+            <p>
+                Ce projet a été réalisé en première année de BUT en binôme, nous avons du développer un jeu de Mastermind en Java.
+                Le projet consistait à coder les mécaniques du jeu en Java et les
+                tester grâce à des tests unitaires puis de faire un main fonctionnel avec un affichage dans la console.
+            </p>
+
         </div>
     </div>
 </main>
