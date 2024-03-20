@@ -12,10 +12,11 @@
 <header class="acc">
     <nav class="container">
         <div class="parent-link">
-            <a href="./accueil.php" class="social-links">Présentation</a>
+            <a href="#ancre" class="social-links" >Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
-            <a href="./contact.php" class="social-links">Contact</a>
+            <a href="./competences.php" class="social-links">Compétences</a>
+
         </div>
     </nav>
     <p class="left">Liam Schott </p>
@@ -26,14 +27,15 @@
 <main>
     <div class="header-container">
         <div class="hdr-container-left">
-            <h2>Présentation</h2>
+            <h2 id="ancre">Présentation</h2>
             <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique à Montpellier.
-                Mon parcours académique a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
-                Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que
-                la communication, la gestion de projet, le développement d'applications...
-            </p>
-            <p>
-                En dehors de mon parcours académique, je cultive une passion pour le numérique, notemment grâce aux jeux vidéos, ainsi qu'à la musique.
+                Mon parcours a débuté avec un Baccalauréat général avec spécialité mathématiques/numérique science informatique (NSI).
+                Mon parcours actuel me donne les bases pour continuer à progresser dans des domaines tels que la communication, la gestion de projet,
+                le développement d'applications. Je suis un passionné du numérique et je m'épanouis particulièrement dans les défis pratiques.
+                À la recherche d'un environnement de travail stimulant, je souhaite mettre en avant ma créativité et mon sens pratique pour contribuer
+                à des projets de manière significative. En dehors de mon parcours académique, je cultive une passion pour le numérique, notamment grâce aux
+                jeux vidéos, ainsi qu'à la musique.
+
             </p>
             <h2>Expériences professionelles</h2>
             <p>
@@ -41,12 +43,7 @@
                 . Cette expérience m'a énormément plus car j'ai pu voir les coulisses de la réalisation d'un dessin animé en 3D qui était un domaine qui m'intéresait énormément.
                 Cette expérience a été décisive dans le choix de mon parcours.
             </p>
-            <p>
-                J'ai l'opportunité d'effectuer un stage au Canada chez Mirkos Animation, une entreprise où travaille mon oncle, lui-même ancien élève de l'IUT.
-                Cette expérience professionnelle à l'international serait non seulement enrichissante sur le plan professionnel, mais elle me permettrait également de
-                développer mes compétences dans un contexte international. Parallèlement, je recherche des opportunités de stage en France, au cas où l'option canadienne
-                ne se concrétiserait pas.
-            </p>
+
             <h2>Orientation Future</h2>
             <p>
                 En ce qui concerne ma poursuite d'études, je suis actuellement en réflexion sur les options qui s'offrent à moi. L'idée de continuer vers un Master dans le domaine de l'informatique m'intéresse, avec un accent particulier sur des spécialités telles que le développement web avancé ou autre.

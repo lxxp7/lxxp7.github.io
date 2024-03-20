@@ -75,10 +75,11 @@ nav {
 
 /* Styles pour le titre de niveau 1 avec effet au survol */
 h1 {
-
-    font-size: 40px;
-    line-height: 1.25;
+   font-size: 40px;
+   line-height: 1.25;
+   margin-bottom: 20px; /* Ajoute de la marge en bas */
 }
+
 
 h1:hover {
     color: #b39ec7;
@@ -87,16 +88,26 @@ h1:hover {
 
 /* Styles pour le titre de niveau 3 */
 h3 {
-    margin: 0.25rem 0 2.25rem 0;
+    margin: 0.25rem 0 0.75rem 0; /* Réduire la marge inférieure */
     color: #333;
 }
 
-/* Styles pour les paragraphes */
+
 p {
     font-size: 20px;
     line-height: 1.5;
-    margin: 1.75rem;
+    margin: 0.75rem;
+    margin-bottom: 1.5rem; /* Ajout de marge inférieure */
 }
+
+.acquis {
+    color: #1f9610;
+}
+
+.non-acquis {
+    color: #b05c5c;
+}
+
 
 /* Styles pour les paragraphes dans l'en-tête */
 header p {
@@ -108,6 +119,10 @@ header p {
     color: rgba(213, 213, 224, 0.4);
     font-size: 6.5em;
     align-self: flex-start; /* Aligner à gauche */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .right {
@@ -185,6 +200,19 @@ footer {
     height: auto;
 }
 
+#aventuriers {
+    max-width: 30%; /* Rétrécir l'image */
+    height: auto;
+    align-self: center; /* Coller l'image à gauche */
+}
+
+#sae {
+    max-width: 30%; /* Rétrécir l'image */
+    height: auto;
+    align-self: center; /* Coller l'image à gauche */
+}
+
+
 /* Ajoutez les règles de médias query pour les téléphones */
 @media screen and (max-width: 767px) {
     /* Styles pour le conteneur de l'en-tête */
@@ -210,10 +238,7 @@ footer {
         font-size: 30px;
     }
 
-    /* Styles pour le titre de niveau 3 */
-    h3 {
-        margin: 0.25rem 0 1.5rem 0;
-    }
+
 
     /* Styles pour les paragraphes */
     header p {
@@ -253,6 +278,10 @@ footer {
     nav a {
         padding: 1rem 0;
         display: block;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 }
 

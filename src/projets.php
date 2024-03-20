@@ -16,7 +16,7 @@
             <a href="./accueil.php" class="social-links">Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
-            <a href="./contact.php" class="social-links">Contact</a>
+            <a href="./competences.php" class="social-links">Compétences</a>
         </div>
     </nav>
 </header>
@@ -25,7 +25,6 @@
     <div class="header-container">
         <div class="hdr-container-left">
             <h1>Projets réalisés</h1>
-
             <h2>Site de gestion des stages</h2>
             <p>
                 Ce projet consiste en la réalisation d'un site web qui doit correspondre aux besoins spécifiques d'un client, ici le client est un enseignant. Nous sommes cinq étudiants à travailler
@@ -37,6 +36,7 @@
                 Voici un
                 <a href="https://webinfo.iutmontp.univ-montp2.fr/~schottl/saeweb/web/controleurFrontal.php">lien vers le site</a>
             </p>
+            <img src="../ressources/images/sae.png" alt="sae" id="sae"/>
             <h2>Les Aventuriers du rail</h2>
             <p>
                 Ce projet, réalisé en première année de BUT consistait à développer un jeu de société appelé "Les aventuriers du Rail" en Java/JavaFX.
@@ -44,6 +44,11 @@
                 la première partie consistait à coder la mécanique du jeu en Java et vérifier qu'elles marchaient grâce à des
                 test unitaires, et dans la deuxième partie nous avons du créer l'IHM du jeu en JavaFX en respectant les règles du jeu,
                 soit bloquer les actions impossibles, avoir un log des actions effectuées, pouvoir choisir le nombre de joueurs au début de la partie, piocher des cartes...
+<br>
+<br>
+            <p>Compétences : Java · JavaFX · Git · Gestion de Projet</p>
+
+                <img src="../ressources/images/aventuriers.png" alt="aventuriers" id="aventuriers"/>
 
             </p>
             <h2>Mastermind</h2>
