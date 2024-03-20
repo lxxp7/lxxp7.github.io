@@ -51,6 +51,7 @@
                 <img src="../ressources/images/aventuriers.png" alt="aventuriers" id="aventuriers"/>
 
             </p>
+              <img src="../ressources/images/rails.png" alt="rails" id="rails"/>
             <h2>Mastermind</h2>
             <p>
                 Ce projet a été réalisé en première année de BUT en binôme, nous avons du développer un jeu de Mastermind en Java.
