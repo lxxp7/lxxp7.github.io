@@ -28,6 +28,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.name {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Style pour les liens sociaux avec effet au survol */
@@ -53,6 +64,7 @@ body {
     /* overflow: auto; */ /* Supprimez cette propriété pour empêcher le défilement dans le GIF en arrière-plan */
     background: black url('./images/DO5-2.gif') no-repeat fixed center center;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -77,6 +89,10 @@ h1 {
    font-size: 40px;
    line-height: 1.25;
    margin-bottom: 20px; /* Ajoute de la marge en bas */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
@@ -89,8 +105,16 @@ h1:hover {
 h3 {
     margin: 0.25rem 0 0.75rem 0; /* Réduire la marge inférieure */
     color: #333;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
+h2{ user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;}
 
 p {
     font-size: 20px;
@@ -142,6 +166,10 @@ header p {
     font-size: 3em;
     align-self: flex-end;
     margin-top: auto; /* Placez le texte au bas du conteneur */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
