@@ -50,10 +50,9 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    overflow: auto;
+    /* overflow: auto; */ /* Supprimez cette propriété pour empêcher le défilement dans le GIF en arrière-plan */
     background: black url('./images/DO5-2.gif') no-repeat fixed center center;
 }
-
 header{
     display: flex;
     flex-direction: column;
