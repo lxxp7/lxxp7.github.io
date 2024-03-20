@@ -13,7 +13,7 @@
 <header>
     <nav class="containerH">
         <div class="parent-link">
-            <a href="./accueil.php" class="social-links">Présentation</a>
+            <a href="index.html" class="social-links">Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
             <a href="./competences.php" class="social-links">Compétences</a>

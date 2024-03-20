@@ -13,7 +13,7 @@
 <header>
     <nav class="container">
         <div class="parent-link">
-            <a href="./accueil.php" class="social-links">Présentation</a>
+            <a href="index.html" class="social-links">Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
             <a href="./competences.php" class="social-links">Compétences</a>
@@ -29,13 +29,15 @@
             <p>
                 Ce projet consiste en la réalisation d'un site web qui doit correspondre aux besoins spécifiques d'un client, ici le client est un enseignant. Nous sommes cinq étudiants à travailler
                 sur ce projet. Mon principal rôle est celui de développeur mais j'ai également été pendant une partie du projet le ScrumMaster de l'équipe, rôle qui consiste à veiller
-                à la réalisation du travail et à la résolution des conflits au sein de l'équipe, ainsi qu'à faire respecter les méthodes agiles .
-            </p>
+                à la réalisation du travail et à la résolution des conflits au sein de l'équipe, ainsi qu'à faire respecter les méthodes agiles. Pour gérer le projet nous avons utilisé Git.
+                Nous avons aussi dû créer une base de donnée afin de pouvoir stocker les différentes informations utiles pour le site. Nous avons utilisé une base de données MySQL pour stocker les informations des utilisateurs et des stages.
+                La principale difficulté de ce projet a été de gérer le temps et de respecter les délais, mais aussi de s'adapter aux besoins du client.
+                Le site est réalisé en PHP, HTML, CSS, JavaScript et SQL. J'ai principalement travaillé sur la partie PHP avec le développement des différentes classes nécessaires à la création d'une convention de stage, à l'ajout d'un stage, à la modification d'un stage...</p>
             <p>
                 Ce site internet a été fait grâce à du PHP, HTML, CSS, JavaScript et SQL.
                 Voici un
-                <a href="https://webinfo.iutmontp.univ-montp2.fr/~schottl/saeweb/web/controleurFrontal.php">lien vers le site</a>
-            </p>
+                <a href="https://webinfo.iutmontp.univ-montp2.fr/~schottl/saeweb/web/controleurFrontal.php">lien vers le site </a>
+                (la BDD était host pas un membre du groupe sur son espace personnel privé à l'IUT, elle n'existe plus à l'heure actuelle donc il y aura des erreurs)</p>
             <img src="../ressources/images/sae.png" alt="sae" id="sae"/>
             <h2>Les Aventuriers du rail</h2>
             <p>
@@ -48,16 +50,25 @@
 <br>
             <p>Compétences : Java · JavaFX · Git · Gestion de Projet</p>
 
-                <img src="../ressources/images/aventuriers.png" alt="aventuriers" id="aventuriers"/>
 
             </p>
-              <img src="../ressources/images/rails.png" alt="rails" id="rails"/>
+              <img src="../ressources/images/rails.png" alt="aventuriers" id="aventuriers"/>
             <h2>Mastermind</h2>
             <p>
                 Ce projet a été réalisé en première année de BUT en binôme, nous avons du développer un jeu de Mastermind en Java.
                 Le projet consistait à coder les mécaniques du jeu en Java et les
                 tester grâce à des tests unitaires puis de faire un main fonctionnel avec un affichage dans la console.
             </p>
+            <img src="../ressources/images/mastermind.png" alt="mastermind" id="aventuriers"/>
+
+            <h2>Relations binaires </h2>
+            <p>
+                Cette comparaison d'approches algorithmiques a été réalisée dans le cadre de l'UE "Mathématiques discrètes" en première année de BUT.
+                Nous avons dû réaliser par groupe de deux étudiants, un exécutable JAVA sur le thème des relations binaires.
+                Cet exécutable devait permettre de tester les propriétés des relations binaires, de les représenter graphiquement et de les manipuler.
+
+            </p>
+
 
         </div>
     </div>

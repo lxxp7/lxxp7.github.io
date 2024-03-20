@@ -13,7 +13,7 @@
 <header>
     <nav class="container">
         <div class="parent-link">
-            <a href="./accueil.php" class="social-links">Présentation</a>
+            <a href="index.html" class="social-links">Présentation</a>
             <a href="./projets.php" class="social-links">Projets</a>
             <a href="./cv.php" class="social-links">CV</a>
             <a href="./competences.php" class="social-links">Compétences</a>
@@ -21,7 +21,7 @@
         </div>
     </nav>
 </header>
-
+<h1>Portfolio d'apprentissage</h1>
 <div>
     <h2>Compétence 1 : Réaliser un développement d’application</h2>
     <h3>Majeure</h3>
@@ -40,6 +40,9 @@
 <div>
     <h2>Compétence 3 : Administer des systèmes informatiques communicants complexes</h2>
     <h3>Mineure</h3>
+
+    <p class="acquis">AC 3 Installer et configurer un système d’exploitation et des outils de développement</p>
+    <p class="acquis">AC 4 Configurer un poste de travail dans un réseau d’entreprise</p>
     <p class="non-acquis">AC1 Concevoir et développer des applications communicantes</p>
     <p class="acquis">AC2 Utiliser des serveurs et des services réseaux virtualisés</p>
     <p class="non-acquis">AC3 Sécuriser les services et données d’un système</p>
