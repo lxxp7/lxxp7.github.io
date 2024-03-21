@@ -21,62 +21,58 @@
         </div>
     </nav>
 </header>
+
+<main>
+    <div class="header-container">
+        <div class="hdr-container-left">
 <h1>Portfolio d'apprentissage</h1>
 <div>
     <h2>Compétence 1 : Réaliser un développement d’application</h2>
     <h3>Majeure</h3>
-    <p class="acquis">AC1 Choisir et implémenter les architectures adaptées</p>
-    <p class="acquis">AC2 Appliquer des principes d’accessibilité et d’ergonomie</p>
+    <p> Grâce à mes deux années d'études, j'ai acquis la capacité de concevoir et de développer des applications informatiques en partant des besoins du client. Je suis ainsi en mesure de fournir des solutions informatiques efficaces et adaptées à divers projets de développement</p>
 </div>
 
 <div>
     <h2>Compétence 2 : Optimiser des applications</h2>
     <h3>Majeure</h3>
-    <p class="acquis">AC1 Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire…)</p>
-    <p class="non-acquis">AC2 Profiler, analyser et justifier le comportement d’un code existant</p>
-    <p class="acquis">AC3 Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d’application (imagerie, immersion, intelligence artificielle, jeux vidéos, parallélisme, calcul formel…)</p>
+    <p>"Mes études m'ont permis d'apprendre à concevoir et à optimiser des algorithmes pour résoudre des problèmes spécifiques, ainsi qu'à analyser et améliorer les performances des applications. Je suis capable d'optimiser l'efficacité des applications en garantissant une utilisation optimale des ressources et une expérience utilisateur améliorée</p>
 </div>
 
 <div>
     <h2>Compétence 3 : Administer des systèmes informatiques communicants complexes</h2>
     <h3>Mineure</h3>
 
-    <p class="acquis">AC 3 Installer et configurer un système d’exploitation et des outils de développement</p>
-    <p class="acquis">AC 4 Configurer un poste de travail dans un réseau d’entreprise</p>
-    <p class="non-acquis">AC1 Concevoir et développer des applications communicantes</p>
-    <p class="acquis">AC2 Utiliser des serveurs et des services réseaux virtualisés</p>
-    <p class="non-acquis">AC3 Sécuriser les services et données d’un système</p>
+    <p>Je dispose de compétences solides en installation, configuration et déploiement de services dans une architecture réseau. Cela me permet d'administrer des systèmes informatiques complexes en assurant leur bon fonctionnement, leur sécurité et en répondant aux besoins d'infrastructure des organisations</p>
 </div>
 
 <div>
     <h2>Compétence 4 : Gérer des données de l’information</h2>
     <h3>Mineure</h3>
-    <p class="acquis">AC1 Optimiser les modèles de données de l’entreprise</p>
-    <p class="non-acquis">AC2 Assurer la confidentialité des données (intégrité et sécurité)</p>
-    <p class="acquis">AC3 Organiser la restitution de données à travers la programmation et la visualisation</p>
-    <p class="non-acquis">AC4 Manipuler des données hétérogènes</p>
+    <p> Ma formation m'a doté des compétences nécessaires pour concevoir et mettre en place des bases de données selon les exigences des clients, ainsi que pour garantir la sécurité des données. Je suis capable de gérer efficacement les informations sensibles des entreprises en mettant en œuvre des mesures de sécurité adéquates</p>
 </div>
 
 <div>
     <h2>Compétence 5 : Conduire un projet</h2>
     <h3>Mineure</h3>
-    <p class="acquis">C5/ AC1 Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</p>
-    <p class="non-acquis">C5/ AC2 Formaliser les besoins du client et de l’utilisateur</p>
-    <p class="non-acquis">C5/ AC3 Identifier les critères de faisabilité d’un projet informatique</p>
-    <p class="acquis">C5/ AC4 Définir et mettre en œuvre une démarche de suivi de projet</p>
+    <p>Avec les compétences acquises, je suis capable d'identifier les besoins métiers des clients et des utilisateurs,
+        et d'appliquer une démarche de suivi de projet adaptée à ces besoins. Cette capacité à conduire un projet,
+        en prenant en compte les spécificités métiers des clients,
+        me permet de mener à bien des projets informatiques en garantissant leur alignement avec les objectifs stratégiques.</p>
 </div>
 
 <div>
     <h2>Compétence 6 : Collaborer au sein d’une équipe informatique</h2>
     <h3>Majeure</h3>
-    <p class="non-acquis">C6/ AC1 Organiser et partager une veille numérique</p>
-    <p class="acquis">C6/ AC2 Identifier les enjeux de l’économie de l’innovation numérique</p>
-    <p class="acquis">C6/ AC3 Guider la conduite du changement informatique au sein d’une organisation</p>
-    <p class="non-acquis">C6/ AC4 Accompagner le management de projet informatique</p>
+    <p>J'ai développé une bonne compréhension de mes aptitudes à travailler en équipe et de mon rôle au sein d'une équipe informatique. De plus, j'ai acquis des compétences en management d'équipe informatique. Cette expérience me rend capable de collaborer efficacement avec mes collègues et de contribuer à la réussite des projets informatiques en tirant parti des forces de chaque membre de l'équipe.</p>
 </div>
 
-<p>En résumé, je suis capable de développer des applications complexes de qualité, recueillir et analyser les besoins du client, réaliser la maintenance ou le suivi de cette application, de mettre en place des jeux de tests et de créer une base de données adaptée.</p>
+<p>En résumé, je suis capable de développer des applications complexes de qualité,
+    recueillir et analyser les besoins du client, réaliser la maintenance ou le suivi de cette application,
+    de mettre en place des jeux de tests et de créer une base de données adaptée.</p>
 
+</div>
+</div>
+</main>
 
 <footer>
     <div class="name">Liam Schott</div>
