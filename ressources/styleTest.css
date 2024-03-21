@@ -242,15 +242,35 @@ footer {
 }
 
 #aventuriers {
-    max-width: 60%; /* Rétrécir l'image */
+    max-width: 50%; /* Rétrécir l'image */
     height: auto;
     align-self: center; /* Coller l'image à gauche */
+    margin-bottom: 2rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #sae {
-    max-width: 60%; /* Rétrécir l'image */
+    max-width: 50%; /* Rétrécir l'image */
     height: auto;
     align-self: center; /* Coller l'image à gauche */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin-bottom: 2rem;
+}
+
+#rb {
+    max-width: 40%; /* Rétrécir l'image */
+    height: auto;
+    align-self: center; /* Coller l'image à gauche */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 

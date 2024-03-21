@@ -66,8 +66,9 @@
                 Cette comparaison d'approches algorithmiques a été réalisée dans le cadre de l'UE "Mathématiques discrètes" en première année de BUT.
                 Nous avons dû réaliser par groupe de deux étudiants, un exécutable JAVA sur le thème des relations binaires.
                 Cet exécutable devait permettre de tester les propriétés des relations binaires, de les représenter graphiquement et de les manipuler.
-
             </p>
+            <img src="../ressources/images/rb.png" alt="rb" id="rb"/>
+
 
 
         </div>
