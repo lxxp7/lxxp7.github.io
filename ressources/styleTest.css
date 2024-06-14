@@ -242,7 +242,7 @@ footer {
 }
 
 #lookdev {
-    max-width: 50%;
+    max-width: 400%;
     height: auto;
 }
 
@@ -252,12 +252,12 @@ footer {
 }
 
 #bp_fw {
-    max-width: 30%;
+    max-width: 200%;
     height: auto;
 }
 
 #lvlseq_fw {
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
 }
 
