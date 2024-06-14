@@ -241,6 +241,26 @@ footer {
     height: auto;
 }
 
+#lookdev {
+    max-width: 50%;
+    height: auto;
+}
+
+#hook {
+    max-width: 50%;
+    height: auto;
+}
+
+#bp_fw {
+    max-width: 50%;
+    height: auto;
+}
+
+#lvlseq_fw {
+    max-width: 50%;
+    height: auto;
+}
+
 #aventuriers {
     max-width: 50%; /* Rétrécir l'image */
     height: auto;
