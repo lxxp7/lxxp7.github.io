@@ -111,10 +111,21 @@ h3 {
     -ms-user-select: none;
 }
 
-h2{ user-select: none;
+h2{
+     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    -ms-user-select: none;}
+    -ms-user-select: none;
+}
+
+h4{
+    font-size: 1.5em;
+    user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   margin-top: 10%;
+}
 
 p {
     font-size: 20px;
