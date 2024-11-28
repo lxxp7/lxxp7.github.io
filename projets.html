@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projets</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ressources/styleTest.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
 <header>
     <nav class="container">
         <div class="parent-link">
-            <a href="index.html" class="social-links">Présentation</a>
+            <a href="./index.html" class="social-links" >Présentation</a>
             <a href="./projets.html" class="social-links">Projets</a>
             <a href="./cv.html" class="social-links">CV</a>
+            <!--            <a href="./competences.html" class="social-links">Compétences</a>-->
+
         </div>
     </nav>
 </header>
-
+<body>
 <main class="projects-container">
     <h1 class="title">Projets réalisés</h1>
 
@@ -26,7 +28,8 @@
         <!-- Dwarf Studio -->
         <div class="project-card" data-project="dwarf-studio">
             <div class="project-image-container">
-                <img src="../ressources/images/lookdev_exemple.PNG" alt="Dwarf Animation Studio" class="project-image">
+                <a href="./projets/dwarf.html">
+                    <img src="./ressources/images/lookdev_exemple.PNG" alt="Dwarf Animation Studio" class="project-image">
                 <div class="project-overlay">
                     <div class="project-content">
                         <h2>Stage Dwarf Animation Studio</h2>
@@ -39,8 +42,9 @@
         <!-- Site de gestion des stages -->
         <div class="project-card" data-project="internship">
             <div class="project-image-container">
-                <img src="../ressources/images/sae.png" alt="Site de gestion des stages" class="project-image">
-                <div class="project-overlay">
+                <a href="./projets/sae1.html">
+                    <img src="./ressources/images/sae.png" alt="Site de gestion des stages" class="project-image">
+                    <div class="project-overlay">
                     <div class="project-content">
                         <h2>Site de gestion des stages</h2>
                         <p>Application web PHP pour la gestion des stages</p>
@@ -52,8 +56,9 @@
         <!-- Les Aventuriers du rail -->
         <div class="project-card" data-project="rails">
             <div class="project-image-container">
-                <img src="../ressources/images/rails.png" alt="Les Aventuriers du rail" class="project-image">
-                <div class="project-overlay">
+                <a href="./projets/rails.html">
+                    <img src="./ressources/images/rails.png" alt="Les Aventuriers du rail" class="project-image">
+                    <div class="project-overlay">
                     <div class="project-content">
                         <h2>Les Aventuriers du rail</h2>
                         <p>Jeu de société développé en Java/JavaFX</p>
@@ -65,8 +70,9 @@
         <!-- Mastermind -->
         <div class="project-card" data-project="mastermind">
             <div class="project-image-container">
-                <img src="../ressources/images/mastermind.png" alt="Mastermind" class="project-image">
-                <div class="project-overlay">
+                <a href="./projets/mastermind.html">
+                <img src="./ressources/images/mastermind.png" alt="Mastermind" class="project-image">
+                    <div class="project-overlay">
                     <div class="project-content">
                         <h2>Mastermind</h2>
                         <p>Implémentation du jeu Mastermind en Java</p>
