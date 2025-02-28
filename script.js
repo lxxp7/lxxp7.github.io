@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             images: ['../ressources/images/rails.png']
         },
-        'mastermind': {
-            title: 'Mastermind',
-            content: `
-                <p>Ce projet a été réalisé en première année de BUT en binôme, nous avons développé un jeu de Mastermind en Java.
-                Le projet consistait à coder les mécaniques du jeu et les tester grâce à des tests unitaires.</p>
-            `,
-            images: ['../ressources/images/mastermind.png']
-        }
+        // 'mastermind': {
+        //     title: 'Mastermind',
+        //     content: `
+        //         <p>Ce projet a été réalisé en première année de BUT en binôme, nous avons développé un jeu de Mastermind en Java.
+        //         Le projet consistait à coder les mécaniques du jeu et les tester grâce à des tests unitaires.</p>
+        //     `,
+        //     images: ['../ressources/images/mastermind.png']
+        // }
     };
 
     // // Créer la modal de détail du projet
