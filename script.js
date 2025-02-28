@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     alternance
                 </p>
             `,
-            images: ['../ressources/images/nightcrawler.PNG']
+            images: ['../ressources/images/nightcrawler.png']
         },
         'dwarf-studio': {
             title: 'Stage Dwarf Animation Studio',
