@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectsData = {
+        'dwarf-alternance': {
+            title: 'Alternance Dwarf Animation Studio',
+            content: `
+                <p>
+                    alternance
+                </p>
+            `,
+            images: ['../ressources/images/nightcrawler.PNG']
+        },
         'dwarf-studio': {
             title: 'Stage Dwarf Animation Studio',
             content: `
