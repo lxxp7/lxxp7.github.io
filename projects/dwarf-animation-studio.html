@@ -28,19 +28,72 @@
     </header>
     <main class="container">
         <section class="section">
-            <h1 class="section-title">Alternance chez Dwarf Animation Studio</h1>
+            <h1 class="section-title">Projet d'alternance chez Dwarf Animation Studio</h1>
             <div class="project-details">
                 <p>En tant qu'alternant développeur chez <strong>Dwarf Animation Studio</strong>, je travaille sur des solutions d'automatisation pour le pipeline de production 3D.</p>
 
                 <h2 class="subtitle">Projet NightCrawler</h2>
-                <p>NightCrawler est une solution d'automatisation des rendus nocturnes pour Unreal Engine. Il permet de :</p>
-                <ul>
-                    <li>Analyser les modifications dans <strong>Perforce</strong></li>
-                    <li>Gérer les dépendances avec <strong>Unreal Engine</strong></li>
-                    <li>Automatiser les rendus via <strong>Deadline</strong></li>
-                    <li>Offrir une interface web pour le suivi des rendus</li>
-                </ul>
+                <p>
+                    Le projet NightCrawler vise à créer une solution logicielle d’automatisation des rendus nocturnes pour un pipeline de production créative. Ce service devra intégrer plusieurs éléments techniques tels que Perforce, Unreal Engine, Deadline et une interface utilisateur web afin de garantir une gestion efficace des dépendances et des rendus. 
 
+                    L’objectif est de simplifier la gestion des rendus en fonction des modifications apportées dans Perforce, tout en offrant une interface intuitive pour superviser et configurer les différents processus. 
+                </p>
+
+                <h3 class="subtitle">Fonctionnalités</h3>
+                <ul>
+                    <li><strong>Analyse des modifications dans Perforce</strong>
+                        <ul>
+                            <li>Extraction des changelists depuis Perforce.</li>
+                            <li>Identification des fichiers modifiés.</li>
+                            <li>Synchronisation du workspace avec les modifications pertinentes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gestion des dépendances</strong>
+                        <ul>
+                            <li>Appel à Unreal Engine via un script Python pour analyser les dépendances.</li>
+                            <li>Résolution des Level Sequences associés aux fichiers modifiés.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Automatisation des rendus</strong>
+                        <ul>
+                            <li>Génération des commandes Unreal Engine pour effectuer les rendus.</li>
+                            <li>Suivi des statuts de rendu (état démarré, progression, terminé, erreur).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interface utilisateur web</strong>
+                        <ul>
+                            <li>Gestion des configurations :
+                                <ul>
+                                    <li>Paramètres de connexion à Perforce.</li>
+                                    <li>Liste d’inclusion/exclusion basée sur des expressions régulières.</li>
+                                    <li>Planification des rendus, pour forcer le rendu d’une séquence (cron jobs).</li>
+                                </ul>
+                            </li>
+                            <li>Visualisation des logs et statuts des rendus.</li>
+                            <li>Tableau des rendus prévus avec la possibilité de déclencher un rendu manuel.</li>
+                            <li>Affichage des changelogs pour chaque rendu.</li>
+                            <li>Accès via login ?</li>
+                        </ul>
+                    </li>
+                    <li><strong>API REST</strong>
+                        <ul>
+                            <li>Points d’entrée pour interagir avec les processus de rendu et les configurations.</li>
+                            <li>Suivi en temps réel des statuts via des notifications.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gestion des données</strong>
+                        <ul>
+                            <li>Stockage des statuts de rendu.</li>
+                            <li>Export des changelogs sous forme de fichiers texte associés aux rendus.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mise en place de tests</strong>
+                        <ul>
+                            <li>Test unitaire du code.</li>
+                            <li>Test fonctionnel avec data de test.</li>
+                        </ul>
+                    </li>
+                </ul>
                 <h2 class="subtitle">Technologies utilisées</h2>
                 <div class="tech-skills">
                     <span class="skill">Python (Flask, SQLAlchemy, Celery)</span>
