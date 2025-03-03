@@ -179,23 +179,6 @@ text-decoration: none;
   width: 100%;
 }
 
-/* Sections */
-.section {
-  padding: 3rem 0;
-}
-
-@media (min-width: 768px) {
-  .section {
-    padding: 6rem 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section {
-    padding: 8rem 0;
-  }
-}
-
 .section-title {
   font-size: 1.875rem;
   font-weight: bold;
@@ -387,7 +370,6 @@ text-decoration: none;
 .project-overview {
   display: flex;
   gap: 2rem;
-  margin-bottom: 1.5rem; /* Reduced from 2rem */
 }
 
 .project-image-container {
