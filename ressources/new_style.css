@@ -375,7 +375,7 @@ text-decoration: none;
 /* Project page specific styles */
 .project-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
 }
 
 .project-subtitle {
@@ -387,7 +387,7 @@ text-decoration: none;
 .project-overview {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
 }
 
 .project-image-container {
@@ -401,15 +401,15 @@ text-decoration: none;
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 1rem; /* Reduced from 1.5rem */
+  margin-top: 1rem; /* Reduced from 1.5rem */
 }
 
 .feature-card {
   background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1rem; /* Reduced from 1.5rem */
   text-align: center;
 }
 
@@ -429,11 +429,48 @@ text-decoration: none;
   padding-left: 1.5rem;
 }
 
+.project-details,
+.technical-details,
+.project-challenges {
+    margin-top: 1.5rem; /* Added to create consistent spacing */
+}
+
+.subtitle {
+    margin-bottom: 0.75rem; /* Added to reduce space below subtitles */
+}
+
+h3 {
+    margin-bottom: 0.5rem; /* Added to reduce space below h3 headings */
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-skills {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
 @media (max-width: 768px) {
   .project-overview {
     flex-direction: column;
   }
 }
+
+/* Adjust general section spacing */
+.section {
+    padding: 2rem 0; /* Reduced from likely 3rem or 4rem */
+    margin-bottom: 2rem; /* Added to create some space between sections */
+}
+
+.footer {
+    margin-top: 2rem; /* Added to create some space before the footer */
+    padding: 1rem 0; /* Reduced from likely 1.5rem or 2rem */
+}
+
 
 @media (min-width: 768px) {
   .tech-grid {
