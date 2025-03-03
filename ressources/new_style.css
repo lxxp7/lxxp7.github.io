@@ -460,11 +460,6 @@ ul {
   }
 }
 
-/* Adjust general section spacing */
-.section {
-    padding: 2rem 0; /* Reduced from likely 3rem or 4rem */
-    margin-bottom: 2rem; /* Added to create some space between sections */
-}
 
 .footer {
     margin-top: 2rem; /* Added to create some space before the footer */
