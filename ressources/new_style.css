@@ -429,12 +429,6 @@ text-decoration: none;
   padding-left: 1.5rem;
 }
 
-.project-details,
-.technical-details,
-.project-challenges {
-    margin-top: 1.5rem; /* Added to create consistent spacing */
-}
-
 .subtitle {
     margin-bottom: 0.75rem; /* Added to reduce space below subtitles */
 }
