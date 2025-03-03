@@ -35,6 +35,10 @@
     box-sizing: border-box;
   }
   
+  h2{
+    margin-bottom: 1rem;
+  }
+
   html {
     scroll-behavior: smooth;
   }
