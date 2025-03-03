@@ -434,6 +434,13 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increase from 300px */
 }
 
+.project-card {
+    width: 100%;
+    max-width: 400px; /* Ajuste si besoin */
+    height: auto;
+}
+
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(179, 158, 199, 0.3); /* Match your purple theme */
