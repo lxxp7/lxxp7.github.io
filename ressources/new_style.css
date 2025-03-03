@@ -200,7 +200,6 @@ text-decoration: none;
   font-size: 1.875rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 3rem;
   line-height: 1.2;
 }
 
@@ -388,7 +387,7 @@ text-decoration: none;
 .project-overview {
   display: flex;
   gap: 2rem;
-  margin-bottom: 1.5rem; /* Reduced from 2rem */
+  margin-bottom: 1rem; /* Reduced from 2rem */
 }
 
 .project-image-container {
@@ -420,10 +419,6 @@ text-decoration: none;
   margin-bottom: 1rem;
 }
 
-.tech-stack,
-.implementation-details {
-  margin-bottom: 1.5rem;
-}
 
 .project-challenges ul {
   list-style-type: disc;
