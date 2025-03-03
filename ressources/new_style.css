@@ -300,6 +300,7 @@ text-decoration: none;
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  max-width: 50%;
 }
 
 .project-image img {
