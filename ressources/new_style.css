@@ -426,6 +426,10 @@ text-decoration: none;
     margin-bottom: 0.75rem; /* Added to reduce space below subtitles */
 }
 
+section{
+  margin-bottom: 1rem;
+}
+
 h3 {
     margin-bottom: 0.5rem; /* Added to reduce space below h3 headings */
 }
