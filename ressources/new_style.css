@@ -179,6 +179,23 @@ text-decoration: none;
   width: 100%;
 }
 
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 8rem 0;
+  }
+}
+
 .section-title {
   font-size: 1.875rem;
   font-weight: bold;
@@ -370,6 +387,7 @@ text-decoration: none;
 .project-overview {
   display: flex;
   gap: 2rem;
+  margin-bottom: 1.5rem; /* Reduced from 2rem */
 }
 
 .project-image-container {
@@ -411,7 +429,11 @@ text-decoration: none;
   padding-left: 1.5rem;
 }
 
-
+.project-details,
+.technical-details,
+.project-challenges {
+    margin-top: 1.5rem; /* Added to create consistent spacing */
+}
 
 .subtitle {
     margin-bottom: 0.75rem; /* Added to reduce space below subtitles */
