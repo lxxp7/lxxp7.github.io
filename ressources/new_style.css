@@ -416,6 +416,7 @@ text-decoration: none;
 .tech-stack,
 .implementation-details {
   margin-bottom: 1.5rem;
+  margin-left: 1rem;
 }
 
 .project-challenges ul {
@@ -445,8 +446,10 @@ ul {
 }
 
 .tech-skills {
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+
 }
 
 
@@ -474,12 +477,15 @@ ul {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .tech-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-left: 1rem;
+
 }
 
 .skill {
