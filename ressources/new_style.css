@@ -430,6 +430,10 @@ section{
   margin-bottom: 3rem;
 }
 
+section{
+  margin-bottom: 6rem;
+}
+
 h3 {
     margin-bottom: 0.5rem; /* Added to reduce space below h3 headings */
 }
