@@ -309,6 +309,11 @@ text-decoration: none;
   transition: transform 0.3s ease;
 }
 
+.image-content{
+  max-width: fit-content;
+  max-height: auto;
+}
+
 .project-image img:hover {
   transform: scale(1.05);
 }
