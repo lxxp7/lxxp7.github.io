@@ -47,6 +47,10 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: rgb(238, 110, 255);
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
