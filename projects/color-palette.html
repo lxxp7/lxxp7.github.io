@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="../ressources/color_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <div id="color-preview" class="color-preview"></div>
+        <h1>Color Palette Generator</h1>
+        <span id="color-value" class="color-value">#15437F</span>
+      </div>
+      <div class="header-right">
+        <div class="theme-toggle">
+          <input type="checkbox" id="dark-mode-toggle" checked>
+          <label for="dark-mode-toggle">Dark Mode</label>
+        </div>
+        <button id="download-btn" class="icon-btn" title="Download Palette">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="left-panel">
+        <div class="color-picker-container">
+          <div class="section-header">
+            <h3>Base Color</h3>
+            <div class="section-header-right">
+              <button id="randomize-btn" class="small-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 4v6h-6"></path>
+                  <path d="M1 20v-6h6"></path>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+                  <path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14"></path>
+                </svg>
+                Randomize
+              </button>
+              <div id="color-preview-small" class="color-preview-small"></div>
+            </div>
+          </div>
+          
+          <input type="color" id="color-picker" value="#15437F">
+          
+          <div class="color-input-container">
+            <div id="color-preview-input" class="color-preview-input"></div>
+            <input type="text" id="color-input" value="#15437F" placeholder="#RRGGBB">
+          </div>
+        </div>
+
+        <div class="sliders-container">
+          <div class="slider-group">
+            <div class="slider-header">
+              <label for="vibrancy-slider">Vibrancy</label>
+              <span id="vibrancy-value">50%</span>
+            </div>
+            <input type="range" id="vibrancy-slider" min="0" max="100" value="50">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <label for="hue-shift-slider">Hue Shift</label>
+              <span id="hue-shift-value">0°</span>
+            </div>
+            <input type="range" id="hue-shift-slider" min="-180" max="180" value="0">
+          </div>
+        </div>
+
+        <div id="color-strip" class="color-strip"></div>
+
+        <div class="download-options">
+          <button id="download-json" class="download-btn">Download JSON</button>
+          <button id="download-css" class="download-btn">Download CSS</button>
+          <button id="download-tailwind" class="download-btn">Download Tailwind Config</button>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div id="color-shades" class="color-shades"></div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">
+      <div class="toast-content">
+        <span id="toast-message">Copied to clipboard!</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../color.js"></script>
+</body>
+</html>
