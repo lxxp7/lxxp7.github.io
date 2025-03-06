@@ -1,14 +1,14 @@
 /* Base styles */
 :root {
   --primary: #8C93A8;
-  --primary-light: #606880;
+  --primary-light: #8C93A8;
   --primary-border: #606880(0, 112, 243, 0.2);
   --background: #FAF7F0;
   --foreground: #000000;
   --muted: #606880;
   --muted-foreground: #140707cb;
   --border: #e5e7eb;
-  --card: #ffffff;
+  --card: #ffffffc9;
   --card-foreground: #606880;
   --radius: 0.5rem;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
