@@ -1,5 +1,5 @@
 /* Base styles */
-:root {
+/* :root {
   --primary: #0070f3;
   --primary-light: rgba(0, 112, 243, 0.1);
   --primary-border: rgba(0, 112, 243, 0.2);
@@ -15,7 +15,7 @@
 }
 
 /* Dark mode variables - can be toggled with JavaScript */
-.dark {
+/* .dark {
   --primary: #0070f3;
   --primary-light: rgba(0, 112, 243, 0.1);
   --primary-border: rgba(0, 112, 243, 0.2);
@@ -26,7 +26,40 @@
   --border: #2a2a2a;
   --card: #1a1a1a;
   --card-foreground: #ffffff;
+} */ */
+:root {
+  --primary: #65afff; /* Argentinian Blue */
+  --primary-light: rgba(101, 175, 255, 0.1);
+  --primary-border: rgba(101, 175, 255, 0.2);
+  --secondary: #6b4e71; /* English Violet */
+  --accent: #6e9887; /* Cambridge Blue */
+  --background: #f6f2ff; /* Magnolia */
+  --foreground: #1d201f; /* Eerie Black */
+  --muted: #e9e4f8; /* Lighter version of Magnolia */
+  --muted-foreground: #6b4e71; /* English Violet as muted text */
+  --border: #d8d0e7; /* Muted border based on Magnolia */
+  --card: #ffffff; /* White for cards */
+  --card-foreground: #1d201f; /* Eerie Black for card text */
+  --radius: 0.5rem;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+/* Dark mode variables - can be toggled with JavaScript */
+.dark {
+  --primary: #65afff; /* Argentinian Blue */
+  --primary-light: rgba(101, 175, 255, 0.15);
+  --primary-border: rgba(101, 175, 255, 0.3);
+  --secondary: #8a6992; /* Lighter English Violet for dark mode */
+  --accent: #7eaa97; /* Lighter Cambridge Blue for dark mode */
+  --background: #1d201f; /* Eerie Black as background */
+  --foreground: #f6f2ff; /* Magnolia as text */
+  --muted: #2a2d2c; /* Slightly lighter than Eerie Black */
+  --muted-foreground: #b8a8be; /* Lighter version of English Violet */
+  --border: #333836; /* Slightly lighter than background */
+  --card: #252928; /* Slightly lighter than background for cards */
+  --card-foreground: #f6f2ff; /* Magnolia for card text */
+}
+
 
 /* Reset and base styles */
 * {
@@ -610,7 +643,7 @@ ul {
 }
 
 /* Portfolio d'apprentissage specific styles */
-.portfolio-intro {
+/* .portfolio-intro {
   max-width: 800px;
   margin: 0 auto 2rem;
   text-align: center;
@@ -628,6 +661,7 @@ ul {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--primary);
+  color: rgb(30, 233, 80);
 }
 
 .competence-description {
@@ -649,6 +683,92 @@ ul {
   font-weight: 600;
   margin-bottom: 0.75rem;
   color: var(--primary);
+}
+
+.apprentissage-list,
+.composantes-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.apprentissage-list li,
+.composantes-list li {
+  margin-bottom: 0.5rem;
+}
+
+.argumentation-content,
+.traces-content {
+  min-height: 100px;
+  padding: 1rem;
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+}
+
+/* Placeholder style for empty content areas */
+/* .argumentation-content:empty::before,
+.traces-content:empty::before {
+  content: "Cliquez pour ajouter du contenu";
+  color: var(--muted-foreground);
+  font-style: italic;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .competence-section {
+    padding: 1.5rem;
+  }
+} */
+
+
+
+
+/* Portfolio d'apprentissage specific styles with new color palette */
+.portfolio-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.competence-section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(107, 78, 113, 0.1); /* English Violet shadow */
+}
+
+.competence-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  color: var(--secondary); /* English Violet */
+}
+
+.competence-description {
+  margin-bottom: 1.5rem;
+}
+
+.apprentissage-critique,
+.composantes-essentielles,
+.argumentation-section,
+.traces-section {
+  margin-bottom: 1.5rem;
+}
+
+.apprentissage-critique h3,
+.composantes-essentielles h3,
+.argumentation-section h3,
+.traces-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--accent); /* Cambridge Blue */
 }
 
 .apprentissage-list,
