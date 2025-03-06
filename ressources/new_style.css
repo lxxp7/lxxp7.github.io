@@ -604,3 +604,82 @@ ul {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* Portfolio d'apprentissage specific styles */
+.portfolio-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.competence-section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+}
+
+.competence-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.competence-description {
+  margin-bottom: 1.5rem;
+}
+
+.apprentissage-critique,
+.composantes-essentielles,
+.argumentation-section,
+.traces-section {
+  margin-bottom: 1.5rem;
+}
+
+.apprentissage-critique h3,
+.composantes-essentielles h3,
+.argumentation-section h3,
+.traces-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.apprentissage-list,
+.composantes-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.apprentissage-list li,
+.composantes-list li {
+  margin-bottom: 0.5rem;
+}
+
+.argumentation-content,
+.traces-content {
+  min-height: 100px;
+  padding: 1rem;
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+}
+
+/* Placeholder style for empty content areas */
+.argumentation-content:empty::before,
+.traces-content:empty::before {
+  content: "Cliquez pour ajouter du contenu";
+  color: var(--muted-foreground);
+  font-style: italic;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .competence-section {
+    padding: 1.5rem;
+  }
+}
+
