@@ -1,55 +1,3 @@
-// // Theme toggle functionality
-// function setupThemeToggle() {
-//   // Check for saved theme preference or use system preference
-//   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-//   const savedTheme = localStorage.getItem("theme")
-
-//   if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-//     document.documentElement.classList.add("dark")
-//   }
-
-//   // Add theme toggle button to header
-//   const header = document.querySelector(".header-content")
-//   const themeToggle = document.createElement("button")
-//   themeToggle.className = "btn btn-icon theme-toggle"
-//   themeToggle.innerHTML = `
-//     <i class="fas fa-sun light-icon"></i>
-//     <i class="fas fa-moon dark-icon"></i>
-//     <span class="sr-only">Changer le thème</span>
-//   `
-
-//   // Insert before the resume button
-//   header.insertBefore(themeToggle, document.querySelector(".btn-outline"))
-
-//   // Add toggle functionality
-//   themeToggle.addEventListener("click", () => {
-//     document.documentElement.classList.toggle("dark")
-//     const isDark = document.documentElement.classList.contains("dark")
-//     localStorage.setItem("theme", isDark ? "dark" : "light")
-//   })
-
-//   // Add styles for theme toggle
-//   const style = document.createElement("style")
-//   style.textContent = `
-//     .theme-toggle {
-//       margin-right: 0.5rem;
-//     }
-//     .light-icon {
-//       display: block;
-//     }
-//     .dark-icon {
-//       display: none;
-//     }
-//     .dark .light-icon {
-//       display: none;
-//     }
-//     .dark .dark-icon {
-//       display: block;
-//     }
-//   `
-//   document.head.appendChild(style)
-// }
-
 // Theme toggle functionality
 function setupThemeToggle() {
   // Check for saved theme preference or use system preference
@@ -88,11 +36,9 @@ function setupThemeToggle() {
     }
     .light-icon {
       display: block;
-      color: #65afff; /* Argentinian Blue */
     }
     .dark-icon {
       display: none;
-      color: #f6f2ff; /* Magnolia */
     }
     .dark .light-icon {
       display: none;
@@ -103,9 +49,6 @@ function setupThemeToggle() {
   `
   document.head.appendChild(style)
 }
-
-// Rest of your JavaScript remains the same
-
 
 // Mobile navigation menu
 function setupMobileNav() {
