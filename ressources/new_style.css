@@ -1,6 +1,6 @@
 /* Base styles */
 :root {
-  --primary: #0070f3;
+  --primary: #3c89e0;
   --primary-light: rgba(0, 112, 243, 0.1);
   --primary-border: rgba(0, 112, 243, 0.2);
   --background: #ffffff;
@@ -16,7 +16,7 @@
 
 /* Dark mode variables - can be toggled with JavaScript */
 .dark {
-  --primary: #0070f3;
+  --primary: #3c89e0;
   --primary-light: rgba(0, 112, 243, 0.1);
   --primary-border: rgba(0, 112, 243, 0.2);
   --background: #1a1a1a;
