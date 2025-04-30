@@ -3,66 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage chez Dwarf Animation Studio - Liam Schott</title>
+    <title>Stage chez Dwarf Animation Studio | Liam Schott</title>
     <link rel="stylesheet" href="../ressources/new_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="min-h-screen bg-background">
-        <header class="sticky-header">
-          <div class="container">
+<div class="min-h-screen bg-background">
+    <header class="sticky-header">
+        <div class="container">
             <div class="header-content">
-              <div class="header-left">
-                <a class="logo" href="/">
-                  <span class="logo-text">Liam Schott</span>
-                </a>
-                <nav class="main-nav">
-                  <a href="../index.html#about" class="nav-link">Présentation</a>
-                  <a href="../index.html#projects" class="nav-link">Projets</a>
-                  <a href="../portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a>
-                </nav>
-              </div>
-              <a href="../ressources/images/cv2.png" download="LIAM_SCHOTT_CV.png" class="btn btn-outline">CV</a>
-            </div>
-          </div>
-        </header>
-    <main class="container">
-        <section class="section">
-            <h1 class="section-title">Stage de 2ème année de BUT chez Dwarf Animation Studio</h1>
-            <div class="project-details">
-                <p>
-                    Lors de ce stage très enrichissant d'un point de vue personnel comme professionnel chez Dwarf Animation Studio,
-                    j'ai eu l'occasion de travailler sur le pipeline de production du studio afin d'y implémenter une nouvelle fonctionnalité,
-                    la résolution des problèmes et l'amélioration de la qualité du code pour une meilleure maintenance à long terme.
-                </p>
-                <p>
-                    La fonctionnalité que j'ai ajouté au pipeline consistait à automatiser la création d'un dossier de LookDev sur le logiciel Unreal Engine.
-                    Ce dossier est essentiel pour un studio d'animation car il permet de visualiser un asset 3D dans une scène avant d'être validé et d'être mis en production.
-                    Cela facilite ainsi le travail des artistes et des techniciens qui devaient alors le créer manuellement pour chaque asset. Ce qui offre alors un gain de temps considérable à l'entreprise.
-                </p>
-                <p>
-                    Pour développer cette fonctionnalitée, j'ai dû apprendre à utiliser de nouveaux outils, tels que Unreal Engine et utiliser son API Python.
-                    J'ai également du analyser le pipeline de production de l'entreprise pour comprendre comment il marchait et comment les fonctionnalitées ajoutées par l'enrteprise avaient été développés.
-                    C'est ensuite dans l'application 'loader' que j'ai du développer cette fonctionnalitée.
-                </p>
-                <h2 class="subtitle">Exemple de scène LookDev</h2>
-                <img src="../ressources/images/lookdev_exemple.PNG" alt="Exemple de scène LookDev" class="image-content">
-
-                <h2 class="subtitle">Fonctions pour l'automatisation du LookDev</h2>
-                <img src="../ressources/images/hook_func.PNG" alt="Fonctions hook" class="image-content">
-                <img src="../ressources/images/bp_fw.PNG" alt="Fonctions bp_fw" class="image-content">
-                <img src="../ressources/images/lvlseq_fw.PNG" alt="Fonctions lvlseq_fw" class="image-content">
-
-                <h2 class="subtitle">Technologies utilisées</h2>
-                <div class="tech-skills">
-                    <span class="skill">Python</span>
-                    <span class="skill">Unreal Engine</span>
-                    <span class="skill">Pipeline d'animation 3D</span>
+                <div class="header-left">
+                    <a class="logo" href="/">
+                        <span class="logo-text">Liam Schott</span>
+                    </a>
+                    <nav class="main-nav">
+                        <a href="../index.html#about" class="nav-link">Présentation</a>
+                        <a href="../index.html#projects" class="nav-link">Projets</a>
+                        <a href="../portfolio-apprentissage.html" class="nav-link">Portfolio d'apprentissage</a>
+                    </nav>
                 </div>
+                <a href="../ressources/images/cv2.png" download="LIAM_SCHOTT_CV.png" class="btn btn-outline">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section project-header">
+            <h1 class="section-title">Stage de 2ᵉ année de BUT</h1>
+            <p class="project-subtitle">Amélioration du pipeline de production chez Dwarf Animation Studio</p>
+        </section>
+
+        <section class="section project-overview">
+            <div class="project-summary">
+                <h2 class="subtitle">Contexte du stage</h2>
+                <p>Ce stage, réalisé au sein de <strong>Dwarf Animation Studio</strong>, m’a permis de contribuer directement au pipeline de production du studio. Mon travail a porté sur l’implémentation d’une fonctionnalité clé : l'automatisation de la création d’un dossier de <em>LookDev</em> dans Unreal Engine. Ce processus, auparavant manuel, est désormais intégré dans un outil interne du studio, ce qui permet un important gain de temps pour les équipes de production.</p>
             </div>
         </section>
+
+        <section class="section project-details">
+            <h2 class="subtitle">Objectifs et réalisation</h2>
+            <ul>
+                <li>Analyse du pipeline existant et des outils internes développés par le studio</li>
+                <li>Apprentissage de l’API Python d’Unreal Engine pour manipuler des assets et des niveaux</li>
+                <li>Implémentation dans l’application interne "loader" pour automatiser la création du dossier de LookDev</li>
+                <li>Optimisation et nettoyage du code pour améliorer la maintenabilité</li>
+            </ul>
+        </section>
+
+        <section class="section project-media">
+            <h2 class="subtitle">Illustrations du travail réalisé</h2>
+            <img src="../ressources/images/lookdev_exemple.PNG" alt="Exemple de scène LookDev" class="image-content">
+            <img src="../ressources/images/hook_func.PNG" alt="Fonctions hook" class="image-content">
+            <img src="../ressources/images/bp_fw.PNG" alt="Fonctions bp_fw" class="image-content">
+            <img src="../ressources/images/lvlseq_fw.PNG" alt="Fonctions lvlseq_fw" class="image-content">
+        </section>
+
+        <section class="section technical-details">
+            <h2 class="subtitle">Technologies utilisées</h2>
+            <div class="tech-skills">
+                <span class="skill">Python</span>
+                <span class="skill">Unreal Engine (API Python)</span>
+                <span class="skill">Pipeline d'animation 3D</span>
+            </div>
+        </section>
+
+        <section class="section project-challenges">
+            <h2 class="subtitle">Défis et apprentissages</h2>
+            <p>Ce stage m’a permis de progresser sur plusieurs plans :</p>
+            <ul>
+                <li>Compréhension approfondie du fonctionnement d’un pipeline de production en animation 3D</li>
+                <li>Autonomie dans la prise en main d’un outil aussi massif qu’Unreal Engine</li>
+                <li>Collaboration avec les équipes techniques du studio pour s'intégrer dans un environnement de production réel</li>
+            </ul>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -78,7 +94,7 @@
             </div>
         </div>
     </footer>
-    </div>
-    <script src="../main.js"></script>
+</div>
+<script src="../main.js"></script>
 </body>
 </html>
