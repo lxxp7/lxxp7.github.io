@@ -1,0 +1,1485 @@
+/* css2.css — theme-only overrides
+   This file intentionally imports the original `new_style.css` (the site's
+   canonical layout/typography/styles) and then overrides only the theme
+   variables. Do NOT change layout/typography here — only modify the
+   variables below to alter colors/background/shadows/accents.
+
+   Goal: preserve everything that comes from `new_style.css` and only change
+   the visual theme tokens (light + dark).
+*/
+
+@import url("new_style.css");
+
+/* Light theme overrides (only variables) */
+:root {
+  --primary: #6366f1;
+  --primary-light: #818cf8;
+  --primary-border: rgba(99, 102, 241, 0.12);
+
+  --background: #f8f7f4; /* page background */
+  --foreground: #2d2a26; /* main text */
+  --muted: #f0ede7; /* muted surfaces */
+  --muted-foreground: #6b6560;
+
+  --border: #e5e1db;
+  --card: #fdfcfa;
+  --card-foreground: #2d2a26;
+
+  --radius: 0.5rem;
+
+  /* subtle accents */
+  --accent-color: #f59e0b;
+  --accent-dark: #d97706;
+  --hover-color: #eef2ff;
+
+  /* shadows that match the soft theme */
+  --shadow-sm: 0 1px 2px 0 rgba(45, 42, 38, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(45, 42, 38, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(45, 42, 38, 0.1);
+
+  /* keep the site's font stack as in new_style.css */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Dark theme overrides — activate with [data-theme='dark'] or .dark class */
+[data-theme="dark"],
+.dark {
+  --primary: #9ca3f5;
+  --primary-light: #b4b9f7;
+  --primary-border: rgba(156, 163, 245, 0.12);
+
+  --background: #1a1a1d;
+  --foreground: #e8e6e3;
+  --muted: #25252a;
+  --muted-foreground: #b5b3af;
+
+  --border: #42424a;
+  --card: #2f2f35;
+  --card-foreground: #e8e6e3;
+
+  --radius: 0.5rem;
+
+  --accent-color: #f5d899;
+  --accent-dark: #e8c77d;
+  --hover-color: #3a3a45;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Make technology/skills text white on project pages */
+.tech-skills .skill {
+  color: #ffffff !important;
+}
+/* Small helper: keep a CSS variable alias for older code that expects --primary-color etc. */
+:root {
+  --primary-color: var(--primary);
+  --primary-dark: var(--primary);
+  --primary-light: var(--primary-light);
+  --bg-dark: var(--background);
+  --bg-darker: var(--muted);
+  --bg-card: var(--card);
+  --text-primary: var(--foreground);
+  --text-secondary: var(--muted-foreground);
+  --border-color: var(--border);
+}
+
+/* End of theme-only overrides */
+/* new_css.css
+   Adapted base styles to match the project's theme tokens and component overrides.
+   This file maps the original base.css look to the project's variables and
+   provides consistent styling for components (buttons, cards, DataTable, inputs).
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "primeicons/primeicons.css";
+
+/* Light Mode (Default) - Soft Warm Theme */
+:root {
+  --primary-color: #6366f1;
+  --primary-dark: #4f46e5;
+  --primary-light: #818cf8;
+  --accent-color: #f59e0b;
+  --accent-dark: #d97706;
+  /* Radius tokens for DRY */
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 50%;
+  /* Soft warm backgrounds - moins agressif que le blanc pur */
+  --bg-dark: #f8f7f4;
+  --bg-darker: #f0ede7;
+  --bg-card: #fdfcfa;
+  /* Texte avec contraste adouci mais toujours accessible (4.5:1+) */
+  --text-primary: #2d2a26;
+  --text-secondary: #6b6560;
+  --border-color: #e5e1db;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+  --warning-color: #f59e0b;
+  --hover-color: #eef2ff;
+  --shadow-sm: 0 1px 2px 0 rgb(45 42 38 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(45 42 38 / 0.08);
+  --shadow-lg: 0 10px 15px -3px rgb(45 42 38 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(45 42 38 / 0.12);
+}
+
+/* Dark Mode - Desaturated Soft Theme */
+[data-theme="dark"],
+.dark {
+  /* Couleurs désaturées pour éviter la fatigue oculaire */
+  --primary-color: #9ca3f5;
+  --primary-dark: #8188e8;
+  --primary-light: #b4b9f7;
+  --accent-color: #f5d899;
+  --accent-dark: #e8c77d;
+  /* Backgrounds doux pour le mode sombre */
+  --bg-dark: #1a1a1d;
+  --bg-darker: #25252a;
+  --bg-card: #2f2f35;
+  /* Texte clair mais pas blanc pur pour réduire le contraste agressif */
+  --text-primary: #e8e6e3;
+  --text-secondary: #b5b3af;
+  --border-color: #42424a;
+  /* Couleurs d'état désaturées */
+  --success-color: #6dbb9a;
+  --danger-color: #e89090;
+  --warning-color: #f5d899;
+  --hover-color: #3a3a45;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(
+    --font-sans,
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif
+  );
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animated Background Grid */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(var(--border-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  animation: gridMove 20s linear infinite;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Legacy layout: preserve original site layout (logo, sticky header, nav, hero, project grid) */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: transparent;
+  backdrop-filter: blur(6px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+/* Header-specific typography and button/link styles to ensure consistency */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-text {
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+/* Nav links used in HTML (.nav-link) */
+.nav-link {
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: var(--hover-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Button primitives used across the site */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-primary);
+  transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-primary);
+}
+
+.btn-icon:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+/* Theme toggle icon styling */
+.theme-toggle {
+  --size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-md);
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.theme-toggle .fa-sun,
+.theme-toggle .fa-moon {
+  font-size: var(--size);
+  color: var(--text-secondary);
+  transition: color 0.18s ease, transform 0.12s ease;
+}
+
+.theme-toggle:hover .fa-sun,
+.theme-toggle:hover .fa-moon {
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.light-icon {
+  display: inline-block;
+}
+.dark-icon {
+  display: none;
+}
+.dark .light-icon {
+  display: none;
+}
+.dark .dark-icon {
+  display: inline-block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: var(--text-secondary);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.main-nav a:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero .hero-left {
+  max-width: 620px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.project-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+footer.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Project page specific styles (ported from css.css) */
+.project-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.project-overview {
+  margin-top: 1rem;
+}
+
+.project-summary {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-details {
+  margin-top: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.feature-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.project-media {
+  margin-top: 1.5rem;
+}
+
+.image-content {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack,
+.implementation-details {
+  margin-bottom: 1.5rem;
+}
+
+.project-challenges ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.subtitle-small {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+/* Responsive adjustments for legacy layout */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .logo img {
+    height: 28px;
+  }
+}
+
+/* Header / Menubar spacing improvements */
+header {
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* Ensure menubar items and router links have breathing room */
+header .p-menubar {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Add spacing between menu items (also targets RouterLink anchors inside menubar) */
+header .p-menubar .p-menubar-root-list > .p-menuitem {
+  margin-right: 0.6rem;
+}
+
+header .p-menubar .p-menuitem-link,
+header a {
+  padding: 0.45rem 0.75rem;
+  margin-right: 0.5rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600; /* Bold */
+  font-size: 1.05rem; /* Slightly larger */
+  user-select: none;
+}
+
+/* Ensure router links and menubar items aren't underlined */
+header a,
+header .p-menubar .p-menuitem-link,
+header .p-menubar .p-menuitem-link .p-menuitem-text {
+  text-decoration: none;
+}
+
+header .p-menubar .p-menuitem-link:hover,
+header a:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Ensure the menubar start area lays out items with a gap (covers RouterLink children) */
+header .p-menubar .p-menubar-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* distribute items across full width */
+  width: 100%; /* take full width of menubar */
+  gap: 1rem;
+}
+
+/* Fix width for menubar end to prevent shifting when API status changes */
+header .p-menubar .p-menubar-end {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+
+header .p-menubar .p-menubar-root-list {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Make each RouterLink in menubar start flex to fill space evenly */
+header .p-menubar .p-menubar-start > a {
+  flex: 1 1 auto;
+  text-align: center;
+  justify-content: center;
+  margin-right: 0;
+}
+
+/* Also ensure direct RouterLink children inside header have spacing */
+header > a,
+header > .p-menubar > a {
+  margin-right: 0.6rem;
+}
+
+/* Space out PrimeVue buttons everywhere */
+.p-button {
+  margin-right: 0.5rem;
+}
+
+/* Action buttons (text/icon) in tables should have small gaps */
+.p-button.p-button-text {
+  margin-right: 0.4rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Ensure toolbar buttons are aligned and spaced */
+.p-toolbar .p-button {
+  margin-right: 0.5rem;
+}
+
+/* Give a little top margin to page content so header doesn't touch it */
+main,
+.container {
+  margin-top: 1rem;
+}
+
+/* PrimeVue Menubar Styling */
+.p-menubar {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 0.75rem 1rem !important;
+  font-family: var(--font-sans, "Inter", sans-serif) !important;
+  min-height: 4rem !important; /* Fixed minimum height to prevent shifting */
+  display: flex !important;
+  align-items: center !important;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-content
+  .p-menuitem-link {
+  color: var(--text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all 0.3s ease !important;
+  user-select: none !important;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-content
+  .p-menuitem-link:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-content
+  .p-menuitem-link
+  .p-menuitem-icon {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+/* Submenu */
+.p-menubar .p-submenu-list {
+  background: var(--bg-darker) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 0.5rem !important;
+  box-shadow: var(--shadow-xl) !important;
+}
+
+.p-menubar .p-submenu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.p-menubar
+  .p-submenu-list
+  .p-menuitem
+  .p-menuitem-content
+  .p-menuitem-link:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: all 0.3s ease !important;
+}
+
+.card:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+}
+
+/* PrimeVue DataTable */
+.p-datatable {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+  font-family: var(--font-sans, "Inter", sans-serif) !important;
+}
+
+.p-datatable .p-datatable-header {
+  background: var(--bg-darker) !important;
+  border-bottom: 2px solid var(--primary-color) !important;
+  color: var(--text-primary) !important;
+  padding: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--bg-darker) !important;
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+  padding: 1rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: var(--hover-color);
+}
+
+.p-datatable .p-datatable-tbody > tr.p-row-odd {
+  background: var(--bg-darker);
+}
+
+.p-datatable .p-datatable-tbody > tr.p-row-odd:hover {
+  background: var(--hover-color);
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 1rem !important;
+  border: none !important;
+}
+
+/* Paginator */
+.p-paginator {
+  background: var(--bg-darker);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 1rem;
+  pointer-events: auto;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  min-width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  cursor: pointer;
+  pointer-events: auto;
+  color: var(--text-secondary);
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.p-paginator .p-paginator-first:hover,
+.p-paginator .p-paginator-prev:hover,
+.p-paginator .p-paginator-next:hover,
+.p-paginator .p-paginator-last:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.p-paginator .p-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Buttons */
+.p-button {
+  background: var(--primary-color);
+  border: none;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.p-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.p-button.p-button-outlined {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.p-button.p-button-outlined:hover {
+  background: var(--hover-color);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.p-button.p-button-danger,
+.p-button.p-button-outlined.p-button-danger {
+  background: transparent;
+  border: 2px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.p-button.p-button-danger:hover {
+  background: var(--danger-color);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  opacity: 0.9;
+}
+
+.p-button.p-button-rounded {
+  border-radius: var(--radius-pill);
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+.p-button.p-button-text {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.p-button.p-button-text:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+/* Toolbar */
+.p-toolbar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Dialog */
+.p-dialog {
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  font-family: var(--font-sans, "Inter", sans-serif);
+}
+
+/* Prevent autofocus warnings in dialogs */
+.p-dialog[data-pc-section="mask"] {
+  pointer-events: auto;
+}
+
+.p-dialog .p-dialog-header {
+  background: var(--bg-darker);
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--text-primary);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.p-dialog .p-dialog-content {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  padding: 2rem;
+}
+
+.p-dialog .p-dialog-footer {
+  background: var(--bg-darker);
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Input Fields */
+.p-inputtext,
+.p-dropdown {
+  background: var(--bg-darker);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans, "Inter", sans-serif);
+  transition: all 0.3s ease;
+}
+
+.p-inputtext:focus,
+.p-dropdown:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  outline: none;
+}
+
+.p-inputtext:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Select/Dropdown */
+.p-select,
+.p-dropdown {
+  background: var(--bg-darker);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.p-select-overlay,
+.p-dropdown-panel {
+  background: var(--bg-darker);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 32px rgba(255, 107, 53, 0.2);
+}
+
+.p-select-option,
+.p-dropdown-item {
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.p-select-option:hover,
+.p-dropdown-item:hover {
+  background: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.p-select-option.p-focus,
+.p-dropdown-item.p-focus {
+  background: var(--hover-color);
+}
+
+/* Skeleton Loader */
+.p-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-darker) 25%,
+    var(--border-color) 50%,
+    var(--bg-darker) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Shared animations used across components - centralized for DRY */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Splitter */
+.p-splitter {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.p-splitter-panel {
+  background: var(--bg-card);
+}
+
+.p-splitter-gutter {
+  background: var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.p-splitter-gutter:hover {
+  background: var(--primary-color);
+}
+
+.p-splitter-gutter-handle {
+  background: var(--primary-color);
+}
+
+/* Badge */
+.p-badge {
+  background: var(--primary-color);
+  color: #ffffff;
+  font-family: var(--font-sans, "Inter", sans-serif);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-lg);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.p-badge.p-badge-success {
+  background: var(--success-color);
+  color: #ffffff;
+}
+
+.p-badge.p-badge-danger {
+  background: var(--danger-color);
+  color: #ffffff;
+}
+
+/* Toast Notifications */
+.p-toast {
+  opacity: 1;
+  font-family: var(--font-sans, "Inter", sans-serif);
+}
+
+.p-toast .p-toast-message {
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  backdrop-filter: blur(10px);
+  margin: 0.5rem 0;
+}
+
+.p-toast .p-toast-message .p-toast-message-content {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.p-toast .p-toast-message .p-toast-message-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.p-toast .p-toast-message .p-toast-message-text {
+  flex: 1;
+}
+
+.p-toast .p-toast-message .p-toast-summary {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.p-toast .p-toast-message .p-toast-detail {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.p-toast .p-toast-message.p-toast-message-success {
+  border-color: var(--success-color);
+}
+
+.p-toast .p-toast-message.p-toast-message-success .p-toast-message-icon {
+  color: var(--success-color);
+}
+
+.p-toast .p-toast-message.p-toast-message-error {
+  border-color: var(--danger-color);
+}
+
+.p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon {
+  color: var(--danger-color);
+}
+
+.p-toast .p-toast-message .p-toast-icon-close {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.p-toast .p-toast-message .p-toast-icon-close:hover {
+  background: var(--hover-color);
+  color: var(--text-primary);
+}
+
+/* Labels */
+label {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+.p-fluid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Tablets et petits écrans - 1024px et moins */
+@media (max-width: 1024px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  header .p-menubar {
+    padding: 0.5rem;
+  }
+
+  header .p-menubar .p-menubar-start {
+    gap: 0.5rem;
+  }
+
+  header .p-menubar .p-menubar-start > a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.95rem;
+    gap: 0.3rem;
+  }
+
+  header .p-menubar .p-menubar-start > a span {
+    display: none;
+  }
+
+  header .p-menubar .p-menubar-start > a i {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  header .p-menubar .p-menubar-end {
+    min-width: auto;
+    gap: 0.3rem;
+  }
+
+  .theme-toggle {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+  }
+
+  :deep(.theme-toggle .pi) {
+    font-size: 1rem;
+  }
+}
+
+/* Écrans moyens - 900px et moins */
+@media (max-width: 900px) {
+  /* Cacher le badge API status sur les écrans moyens */
+  .api-status-badge {
+    display: none;
+  }
+
+  header .p-menubar .p-menubar-end {
+    min-width: auto;
+  }
+}
+
+/* Petits écrans - 768px et moins */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header {
+    padding: 0.5rem 0.25rem;
+  }
+
+  header .p-menubar {
+    padding: 0.4rem 0.5rem;
+    min-height: 3rem;
+  }
+
+  header .p-menubar .p-menubar-start {
+    gap: 0.2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  header .p-menubar .p-menubar-start > a {
+    padding: 0.5rem;
+    min-width: 2.5rem;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+
+  /* Cacher le bouton dark mode sur petits écrans */
+  .theme-toggle {
+    display: none;
+  }
+
+  header .p-menubar .p-menubar-end {
+    display: none;
+  }
+
+  .p-datatable .p-datatable-thead > tr > th,
+  .p-datatable .p-datatable-tbody > tr > td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .p-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Très petits écrans - 480px et moins */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  header {
+    padding: 0.25rem;
+  }
+
+  header .p-menubar {
+    padding: 0.3rem 0.4rem;
+    min-height: 2.5rem;
+  }
+
+  header .p-menubar .p-menubar-start > a {
+    padding: 0.4rem;
+    min-width: 2rem;
+  }
+
+  header .p-menubar .p-menubar-start > a i {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .p-dialog .p-dialog-content {
+    padding: 1rem;
+  }
+
+  .p-datatable .p-datatable-thead > tr > th,
+  .p-datatable .p-datatable-tbody > tr > td {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Empêcher le débordement horizontal sur tous les écrans */
+* {
+  max-width: 100%;
+}
+
+header .p-menubar,
+.p-menubar .p-menubar-start,
+.p-menubar .p-menubar-end {
+  overflow: visible;
+}
+
+/* Assurer que les liens ne se cassent pas */
+header a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}

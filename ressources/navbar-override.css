@@ -1,0 +1,99 @@
+/* Navbar override: keep original header/navbar look on the main page
+   This file contains only header-related rules copied from the original css
+   to ensure the navbar remains unchanged when the main stylesheet is swapped. */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--background);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+.logo-text {
+  font-weight: bold;
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--muted-foreground);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+}
+
+.btn-outline:hover {
+  background-color: var(--muted);
+}
+
+.btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.btn-icon:hover {
+  background-color: var(--muted);
+}
