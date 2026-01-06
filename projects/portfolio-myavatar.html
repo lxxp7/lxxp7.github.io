@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyAvatar - Projet Portfolio | Liam Schott</title>
+    <link rel="stylesheet" href="../ressources/css2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="min-h-screen bg-background">
+      <header class="sticky-header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-left">
+              <a class="logo" href="/">
+                <span class="logo-text">Liam Schott</span>
+              </a>
+              <nav class="main-nav">
+                <a href="../index.html#about" class="nav-link">Présentation</a>
+                <a href="../index.html#projects" class="nav-link">Projets</a>
+                <a href="../portfolio-apprentissage.html" class="nav-link"
+                  >Portfolio d'apprentissage</a
+                >
+              </nav>
+            </div>
+            <a
+              href="../ressources/images/new_cv.pdf"
+              download="LIAM_SCHOTT_CV.pdf"
+              class="btn btn-outline"
+              >CV</a
+            >
+          </div>
+        </div>
+      </header>
+      <main class="container">
+
+        <!-- Présentation -->
+        <section class="section project-header">
+          <h1 class="section-title">🎭 MyAvatar</h1>
+          <p class="project-subtitle">
+            Plateforme de gestion d'avatars personnalisés - Un clone de Gravatar développé avec Symfony 6.4
+          </p>
+          <div class="tech-skills">
+            <span class="skill">Symfony 6.4</span>
+            <span class="skill">PHP 8.1+</span>
+            <span class="skill">Doctrine ORM</span>
+            <span class="skill">Twig</span>
+            <span class="skill">JavaScript ES6</span>
+            <span class="skill">AJAX</span>
+            <span class="skill">Security</span>
+          </div>
+        </section>
+
+        <section class="section project-overview">
+          <div class="project-summary">
+            <h2 class="subtitle">📖 Présentation du Projet</h2>
+            <p>
+              MyAvatar est une application web développée avec <strong>Symfony</strong> et <strong>Twig</strong> qui permet d'associer une adresse email à une photo de profil, 
+              à la manière du service <strong>Gravatar</strong>. Les utilisateurs peuvent gérer leur compte et leur avatar depuis une 
+              interface sécurisée. Toute application externe peut récupérer un avatar via une simple URL basée sur le <strong>hash SHA256</strong> 
+              de l'adresse email.
+            </p>
+            <p style="margin-top: 15px;">
+              <strong>Projet réalisé en équipe de 3 étudiants</strong> dans le cadre de ma formation en BUT Informatique. J'ai principalement travaillé sur l'espace personnel, 
+              les fonctionnalités dynamiques AJAX et l'espace administrateur.
+            </p>
+            <div style="text-align: center; margin-top: 30px;">
+              <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/belhajy/myavatarprojet" 
+                 target="_blank"
+                 class="btn btn-outline">
+                🔗 Voir le code source sur GitLab
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="subtitle">📊 Statistiques du Projet</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-route feature-icon"></i>
+              <h3>15+ Routes</h3>
+              <p>Routes configurées pour la navigation et l'API</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-gamepad feature-icon"></i>
+              <h3>3 Contrôleurs</h3>
+              <p>Contrôleurs principaux pour la logique métier</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-terminal feature-icon"></i>
+              <h3>4 Commandes</h3>
+              <p>Commandes console pour la gestion</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <h3>100% Tests</h3>
+              <p>Tests fonctionnels complets</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="subtitle">🎯 Mes Contributions Principales</h2>
+          <div class="project-summary">
+            <p>
+              Dans ce projet d'équipe, j'ai pris en charge le développement de fonctionnalités clés nécessitant une bonne maîtrise 
+              de JavaScript, AJAX et de l'architecture Symfony. Mon travail s'est concentré sur l'expérience utilisateur et 
+              les interfaces dynamiques sans rechargement de page.
+            </p>
+          </div>
+        </section>
+
+        <!-- Fonctionnalités Principales -->
+
+        <section class="section project-details">
+          <h2 class="subtitle">✨ Mes Réalisations Techniques</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-user feature-icon"></i>
+              <h3>Espace Personnel Complet</h3>
+              <ul>
+                <li>Interface de visualisation du profil utilisateur</li>
+                <li>Upload et modification de photo de profil</li>
+                <li>Suppression de la photo de profil</li>
+                <li>Gestion des fichiers avec validation côté serveur</li>
+                <li>Interface intuitive et responsive</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-bolt feature-icon"></i>
+              <h3>Validation AJAX en Temps Réel</h3>
+              <ul>
+                <li>Vérification instantanée du login disponible</li>
+                <li>Vérification instantanée de l'email disponible</li>
+                <li>Feedback visuel immédiat pour l'utilisateur</li>
+                <li>Désactivation du submit si erreurs détectées</li>
+                <li>Code JavaScript modulaire et réutilisable</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-eye-slash feature-icon"></i>
+              <h3>Système de Masquage du Profil</h3>
+              <ul>
+                <li>Toggle masquer/démasquer le profil public</li>
+                <li>Mise à jour dynamique sans rechargement</li>
+                <li>Blocage de l'accès public si profil masqué</li>
+                <li>Gestion des permissions et sécurité</li>
+                <li>Interface utilisateur intuitive</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-shield-alt feature-icon"></i>
+              <h3>Panneau d'Administration</h3>
+              <ul>
+                <li>Liste complète de tous les utilisateurs</li>
+                <li>Suppression des utilisateurs non-admin</li>
+                <li>Protection avec Security Voters</li>
+                <li>Interface d'administration sécurisée</li>
+                <li>Gestion des rôles et permissions</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-sync-alt feature-icon"></i>
+              <h3>Interactions Dynamiques AJAX</h3>
+              <ul>
+                <li>Mise à jour du profil sans rechargement</li>
+                <li>Gestion asynchrone des requêtes</li>
+                <li>Feedback utilisateur en temps réel</li>
+                <li>Amélioration de l'expérience utilisateur</li>
+                <li>Code JavaScript ES6 moderne</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-code feature-icon"></i>
+              <h3>JavaScript Modulaire</h3>
+              <ul>
+                <li>field_validation.js pour la validation</li>
+                <li>toggle_profile_visibility.js pour le masquage</li>
+                <li>photo_profil.js pour la gestion des photos</li>
+                <li>Code organisé et maintenable</li>
+                <li>Bonnes pratiques JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="subtitle">👥 Contexte du Projet</h2>
+          <div class="project-summary">
+            <p>
+              Projet réalisé en équipe de 3 étudiants dans le cadre de ma formation en BUT Informatique. Chaque membre de l'équipe a 
+              pris en charge des fonctionnalités spécifiques du projet :
+            </p>
+          </div>
+          <div class="implementation-details">
+            <h3>Répartition des Tâches</h3>
+            <ul>
+              <li><strong>Liam SCHOTT (moi) :</strong> Espace personnel, validation AJAX, masquage du profil, interface administrateur</li>
+              <li><strong>BELHAJ Yaniss :</strong> Système d'inscription, modification du compte, API avatars publique, mode maintenance</li>
+              <li><strong>FAUS Hugo :</strong> Commandes console Symfony pour la gestion des utilisateurs</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Architecture Technique -->
+
+        <section class="section">
+          <h2 class="subtitle">🏗️ Architecture Technique</h2>
+          <div class="tech-skills">
+            <span class="skill">Architecture MVC</span>
+            <span class="skill">Design Patterns</span>
+            <span class="skill">Injection de Dépendances</span>
+            <span class="skill">Repository Pattern</span>
+            <span class="skill">Service Layer</span>
+            <span class="skill">Event Subscribers</span>
+            <span class="skill">Security Voters</span>
+          </div>
+
+          <div class="implementation-details">
+            <h3>Couches de l'Application</h3>
+            <ul>
+              <li>
+                <strong>Couche Présentation:</strong> Twig Templates (base.html.twig, connexion.html.twig, inscription.html.twig, monCompte.html.twig, users.html.twig) avec JavaScript (field_validation.js, toggle_profile_visibility.js, photo_profil.js) et CSS personnalisé
+              </li>
+              <li>
+                <strong>Couche Contrôleurs:</strong> UtilisateurController (gestion inscription, connexion, profil, avatars), AdminUserController (administration des utilisateurs), AccueilController (page d'accueil)
+              </li>
+              <li>
+                <strong>Couche Services:</strong> UtilisateurManager (logique métier), FlashMessageHelper (gestion messages flash), Services Symfony (Security, Form, Mailer)
+              </li>
+              <li>
+                <strong>Couche Données:</strong> Entity Utilisateur avec annotations Doctrine, UtilisateurRepository avec requêtes personnalisées, Migrations pour gestion de schéma
+              </li>
+              <li>
+                <strong>Couche Sécurité:</strong> Security Bundle (Authentication, Authorization), Voters (UtilisateurVoter pour permissions granulaires), Event Listeners (AuthenticationSubscriber, MaintenanceListener)
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Stack Technique Détaillée -->
+
+        <section class="section technical-details">
+          <h2 class="subtitle">💻 Stack Technique Détaillée</h2>
+          <div class="tech-stack">
+            <h3>Technologies Backend</h3>
+            <div class="tech-skills">
+              <span class="skill">PHP 8.1+</span>
+              <span class="skill">Symfony 6.4</span>
+              <span class="skill">Doctrine ORM 3.5</span>
+              <span class="skill">Doctrine Migrations</span>
+              <span class="skill">Symfony Console</span>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Technologies Frontend</h3>
+            <div class="tech-skills">
+              <span class="skill">Twig Template Engine</span>
+              <span class="skill">JavaScript ES6</span>
+              <span class="skill">AJAX / Fetch API</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">Stimulus (UX Bundle)</span>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Sécurité & Formulaires</h3>
+            <div class="tech-skills">
+              <span class="skill">Security Bundle</span>
+              <span class="skill">Password Hasher</span>
+              <span class="skill">CSRF Protection</span>
+              <span class="skill">Voters personnalisés</span>
+              <span class="skill">Symfony Forms</span>
+              <span class="skill">Validators</span>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Tests & Outils</h3>
+            <div class="tech-skills">
+              <span class="skill">PHPUnit 12.3</span>
+              <span class="skill">Tests fonctionnels</span>
+              <span class="skill">Composer</span>
+              <span class="skill">Symfony CLI</span>
+              <span class="skill">Asset Mapper</span>
+              <span class="skill">Monolog</span>
+              <span class="skill">Web Profiler</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Commandes Console -->
+
+        <section class="section">
+          <h2 class="subtitle">⚙️ Configuration Optionnelle</h2>
+          <div class="implementation-details">
+            <p>Le projet peut être configuré en mode production en modifiant la variable <code>APP_ENV</code> dans le fichier <code>.env</code>.</p>
+          </div>
+        </section>
+
+        <!-- Structure et Organisation -->
+
+        <section class="section">
+          <h2 class="subtitle">📁 Structure et Organisation du Code</h2>
+          <div class="implementation-details">
+            <h3>Organisation Modulaire</h3>
+            <ul>
+              <li><strong>src/Entity/</strong> - Entités Doctrine avec annotations et contraintes de validation</li>
+              <li><strong>src/Controller/</strong> - Contrôleurs avec routes et logique de présentation</li>
+              <li><strong>src/Service/</strong> - Services métier avec interfaces pour l'injection</li>
+              <li><strong>src/Repository/</strong> - Repositories pour requêtes personnalisées</li>
+              <li><strong>src/Form/</strong> - Form Types personnalisés (UtilisateurType, CompteType, PhotoProfilType)</li>
+              <li><strong>src/Security/Voter/</strong> - Voters pour autorisation granulaire</li>
+              <li><strong>src/EventListener/</strong> - Event Subscribers et Listeners</li>
+              <li><strong>src/Command/</strong> - Commandes console Symfony</li>
+              <li><strong>templates/</strong> - Templates Twig organisés par fonctionnalité</li>
+              <li><strong>tests/</strong> - Tests fonctionnels avec PHPUnit</li>
+              <li><strong>config/</strong> - Configuration Symfony (routes, services, security)</li>
+            </ul>
+
+            <h3>Bonnes Pratiques Appliquées</h3>
+            <div class="tech-skills">
+              <span class="skill">SOLID Principles</span>
+              <span class="skill">Separation of Concerns</span>
+              <span class="skill">Dependency Injection</span>
+              <span class="skill">Interface Segregation</span>
+              <span class="skill">PSR Standards</span>
+              <span class="skill">Type Hinting</span>
+              <span class="skill">Documentation PHPDoc</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sécurité -->
+
+        <section class="section project-details">
+          <h2 class="subtitle">🔒 Sécurité et Protection</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-shield-alt feature-icon"></i>
+              <h3>Protection CSRF</h3>
+              <ul>
+                <li>Tokens CSRF sur tous les formulaires</li>
+                <li>Validation côté serveur</li>
+                <li>Protection des actions sensibles</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-lock feature-icon"></i>
+              <h3>Hashage des Mots de Passe</h3>
+              <ul>
+                <li>Password Hasher Symfony</li>
+                <li>Algorithme bcrypt/argon2</li>
+                <li>Jamais de mots de passe en clair</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-users feature-icon"></i>
+              <h3>Gestion des Rôles</h3>
+              <ul>
+                <li>ROLE_USER pour utilisateurs</li>
+                <li>ROLE_ADMIN pour administrateurs</li>
+                <li>Hiérarchie de rôles configurée</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-door-open feature-icon"></i>
+              <h3>Contrôle d'Accès</h3>
+              <ul>
+                <li>Attributes IsGranted sur routes</li>
+                <li>Voters pour logique complexe</li>
+                <li>Vérification d'ownership</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-check-double feature-icon"></i>
+              <h3>Validation des Données</h3>
+              <ul>
+                <li>Constraints Symfony Validator</li>
+                <li>UniqueEntity pour unicité</li>
+                <li>Validation email format</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-user-secret feature-icon"></i>
+              <h3>Confidentialité</h3>
+              <ul>
+                <li>Profils masquables</li>
+                <li>Hash SHA256 pour API</li>
+                <li>Image par défaut si masqué</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compétences Démontrées -->
+
+        <section class="section">
+          <h2 class="subtitle">🎓 Compétences Techniques Développées</h2>
+          <div class="implementation-details">
+            <ul>
+              <li><strong>JavaScript Moderne :</strong> ES6+, Async/Await, Fetch API, Promises, manipulation du DOM, gestion d'événements</li>
+              <li><strong>AJAX et Communication Asynchrone :</strong> Requêtes asynchrones, gestion des réponses JSON, feedback utilisateur en temps réel</li>
+              <li><strong>Symfony & Twig :</strong> Contrôleurs, routing, templates Twig, formulaires, sessions, Security component</li>
+              <li><strong>Architecture MVC :</strong> Séparation des responsabilités, organisation du code, bonnes pratiques</li>
+              <li><strong>Sécurité Web :</strong> Gestion des rôles, contrôle d'accès, protection CSRF, validation des données</li>
+              <li><strong>UX/UI :</strong> Interfaces dynamiques, feedback instantané, expérience utilisateur fluide sans rechargement</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Points Forts -->
+
+        <section class="section project-details">
+          <h2 class="subtitle">💪 Points Forts de Mes Contributions</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-star feature-icon"></i>
+              <h3>Expérience Utilisateur</h3>
+              <p>Interfaces dynamiques avec validation instantanée et feedback en temps réel pour une expérience fluide sans rechargement de page</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-code feature-icon"></i>
+              <h3>Code Modulaire</h3>
+              <p>JavaScript organisé en modules réutilisables, code propre et maintenable suivant les bonnes pratiques</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-lock feature-icon"></i>
+              <h3>Sécurité</h3>
+              <p>Gestion des rôles avec Security Voters, protection des routes admin, validation côté serveur</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-bolt feature-icon"></i>
+              <h3>Performances</h3>
+              <p>Requêtes AJAX asynchrones, mise à jour partielle de l'interface, chargement optimisé</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-puzzle-piece feature-icon"></i>
+              <h3>Intégration</h3>
+              <p>Parfaite intégration avec l'architecture Symfony, respect des conventions et patterns du framework</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-users-cog feature-icon"></i>
+              <h3>Travail d'Équipe</h3>
+              <p>Collaboration efficace, code compatible avec les développements des autres membres, communication claire</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cas d'Usage -->
+
+        <section class="section">
+          <h2 class="subtitle">🎯 Fonctionnalités de l'Application Complète</h2>
+          <div class="implementation-details">
+            <h3>Vue d'ensemble du projet</h3>
+            <p>
+              MyAvatar propose une solution complète de gestion d'avatars similaire à Gravatar. L'application permet aux utilisateurs 
+              de créer un compte, gérer leur profil et leur photo, avec un accès public via API pour les applications externes.
+            </p>
+
+            <h3>Principales fonctionnalités du système</h3>
+            <ul>
+              <li><strong>Authentification :</strong> Inscription, connexion et déconnexion sécurisées (développé par Yaniss)</li>
+              <li><strong>Espace personnel :</strong> Gestion complète du profil et de la photo (ma contribution)</li>
+              <li><strong>Validation temps réel :</strong> Vérification AJAX des logins et emails (ma contribution)</li>
+              <li><strong>API publique :</strong> Accès aux avatars via hash SHA256 (développé par Yaniss)</li>
+              <li><strong>Administration :</strong> Interface de gestion des utilisateurs (ma contribution)</li>
+              <li><strong>Commandes console :</strong> Gestion des utilisateurs en ligne de commande (développé par Hugo)</li>
+              <li><strong>Mode maintenance :</strong> Mise hors ligne temporaire de l'application (développé par Yaniss)</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Évolutions Possibles -->
+
+        <section class="section project-details">
+          <h2 class="subtitle">🚀 Apprentissages et Perspectives</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-lightbulb feature-icon"></i>
+              <h3>Apprentissages Clés</h3>
+              <ul>
+                <li>Maîtrise de JavaScript asynchrone</li>
+                <li>Architecture MVC avec Symfony</li>
+                <li>Développement d'interfaces dynamiques</li>
+                <li>Travail en équipe sur un projet structuré</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-rocket feature-icon"></i>
+              <h3>Améliorations Possibles</h3>
+              <ul>
+                <li>Ajout de filtres et effets sur avatars</li>
+                <li>Système de notifications en temps réel</li>
+                <li>Interface d'administration plus complète</li>
+                <li>Support multi-langues</li>
+              </ul>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-chart-line feature-icon"></i>
+              <h3>Évolutions Techniques</h3>
+              <ul>
+                <li>Migration vers une architecture API REST</li>
+                <li>Ajout de tests automatisés front-end</li>
+                <li>Optimisation des performances</li>
+                <li>Intégration d'un CDN pour les images</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p class="copyright">© 2024 Liam Schott. Tous droits réservés.</p>
+            <nav class="footer-nav">
+              <a
+                href="https://www.linkedin.com/in/liam-schott-741b2b263/"
+                target="_blank"
+                class="footer-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/lxxp7/"
+                target="_blank"
+                class="footer-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
