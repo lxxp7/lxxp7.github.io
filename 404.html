@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liam Schott · le portfolio a déménagé</title>
+  <meta name="description" content="Le portfolio de Liam Schott, développeur full-stack, est maintenant sur liam-dev.fyi.">
+  <link rel="canonical" href="https://liam-dev.fyi/">
+  <meta name="theme-color" content="#F1EBE1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17110F" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="refresh" content="8;url=https://liam-dev.fyi/">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage.woff2" crossorigin>
+  <style>
+    @font-face{font-family:"Bricolage Grotesque";font-display:swap;font-weight:200 800;src:url(/fonts/bricolage.woff2) format("woff2-variations");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:"Geist";font-display:swap;font-weight:100 900;src:url(/fonts/geist.woff2) format("woff2-variations");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    :root{color-scheme:light dark;
+      --bg:light-dark(#F1EBE1,#17110F);--surface:light-dark(#E5DDD0,#241C18);--border:light-dark(#D5CBBB,#3A2E27);
+      --ink:light-dark(#2A211B,#F5EFE7);--ink-2:light-dark(#51443A,#D9CBBC);--ink-muted:light-dark(#695B4F,#A89A8B);
+      --accent-text:light-dark(#9A3E35,#E07268);--accent-fill:light-dark(#A5453B,#C94A40);--on-fill:#FBF6EE;
+      --shadow:light-dark(rgba(70,40,28,.22),rgba(0,0,0,.7));--accent-shadow:light-dark(rgba(165,69,59,.22),rgba(201,74,64,.38));
+      --font-display:"Bricolage Grotesque",system-ui,sans-serif;--font-sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --font-mono:ui-monospace,"SF Mono",Menlo,monospace}
+    *{box-sizing:border-box;margin:0}
+    html,body{height:100%}
+    body{min-height:100svh;display:grid;place-items:center;padding:clamp(20px,5vw,56px);background:var(--bg);color:var(--ink);font-family:var(--font-sans);line-height:1.6;-webkit-font-smoothing:antialiased;
+      background-image:radial-gradient(60% 520px at 88% 0%,color-mix(in srgb,var(--accent-fill) 14%,transparent),transparent 75%),radial-gradient(45% 420px at 0% 100%,color-mix(in srgb,var(--accent-fill) 8%,transparent),transparent 75%)}
+    body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+    main{position:relative;width:min(100%,46rem)}
+    .logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;letter-spacing:-.02em}
+    .logo-mark{display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--accent-fill);color:var(--on-fill);font-size:.8rem}
+    .badge{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(28px,6vw,56px);padding:6px 14px;border:1px solid var(--border);border-radius:999px;background:color-mix(in srgb,var(--surface) 70%,transparent);font-family:var(--font-mono);font-size:.75rem;color:var(--ink-2)}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-fill)}
+    h1{margin-top:20px;font-family:var(--font-display);font-weight:800;font-size:clamp(3rem,13vw,8.5rem);line-height:.92;letter-spacing:-.04em}
+    h1 .acc{color:var(--accent-text)}
+    p.lead{margin-top:24px;max-width:34rem;font-size:clamp(1rem,2.2vw,1.2rem);color:var(--ink-2)}
+    .cta{display:inline-flex;align-items:center;gap:14px;margin-top:36px;padding:8px 8px 8px 26px;border-radius:999px;background:var(--accent-fill);color:var(--on-fill);font-family:var(--font-display);font-weight:700;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em;box-shadow:0 18px 40px -22px var(--accent-shadow);transition:translate .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+    .cta svg{width:2.5rem;height:2.5rem;padding:.65rem;border-radius:50%;background:color-mix(in srgb,var(--on-fill) 16%,transparent);fill:none;stroke:var(--on-fill);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+    .cta:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px}
+    @media (hover:hover){.cta:hover{translate:0 -3px;box-shadow:0 26px 48px -22px var(--accent-shadow)}}
+    .meta{display:flex;align-items:center;gap:12px;margin-top:28px;font-family:var(--font-mono);font-size:.78rem;color:var(--ink-muted)}
+    .ring{--p:0;width:1.4rem;height:1.4rem;border-radius:50%;background:conic-gradient(var(--accent-fill) calc(var(--p)*1%),var(--border) 0);-webkit-mask:radial-gradient(circle,transparent 55%,#000 57%);mask:radial-gradient(circle,transparent 55%,#000 57%)}
+    .meta a{color:var(--accent-text)}
+    @media (prefers-reduced-motion:reduce){.cta{transition:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <span class="logo"><span class="logo-mark" aria-hidden="true">LS</span>Liam&nbsp;Schott</span>
+    <p class="badge"><span class="dot" aria-hidden="true"></span>Nouvelle adresse</p>
+    <h1>Le portfolio<br>a <span class="acc">déménagé.</span></h1>
+    <p class="lead">Mon portfolio de développeur full-stack vit maintenant sur son propre domaine. Vous allez être redirigé automatiquement.</p>
+    <a class="cta" id="go" href="https://liam-dev.fyi/">liam-dev.fyi
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+    <p class="meta"><span class="ring" id="ring" aria-hidden="true"></span><span id="count" aria-live="polite">Redirection dans 5 s</span> <noscript>(JavaScript désactivé : utilisez le bouton)</noscript></p>
+  </main>
+  <script>
+    (function () {
+      var HOST = "https://liam-dev.fyi";
+      /* Anciennes URLs (CV, liens) : /projects/x.html devient /projects/x, la racine reste la racine. */
+      var path = location.pathname.replace(/index\.html$/, "").replace(/\.html$/, "");
+      var known = /^\/(projects\/[a-z-]+|portfolio-apprentissage|mentions-legales)?$/;
+      var dest = HOST + (known.test(path) ? path : "/");
+      document.getElementById("go").href = dest;
+      var meta = document.querySelector('meta[http-equiv="refresh"]');
+      if (meta) meta.setAttribute("content", "8;url=" + dest);
+      var total = 5, start = Date.now(), ring = document.getElementById("ring"), count = document.getElementById("count");
+      var timer = setInterval(function () {
+        var left = Math.max(0, total - (Date.now() - start) / 1000);
+        ring.style.setProperty("--p", Math.round(100 - left / total * 100));
+        count.textContent = "Redirection dans " + Math.ceil(left) + " s";
+        if (left <= 0) { clearInterval(timer); location.replace(dest); }
+      }, 100);
+    })();
+  </script>
+</body>
+</html>
